@@ -34,20 +34,7 @@
   <img src="https://img.icons8.com/color/48/microsoft-powerpoint-2019--v1.png" alt="PowerPoint" width="48" height="48" />
   &nbsp;&nbsp;
 
-  <!-- Power Automate -->
-  <img src="https://img.icons8.com/color/48/microsoft-power-automate-2020.png" alt="Power Automate" width="48" height="48" />
-  &nbsp;&nbsp;
 
-  <!-- Demais ferramentas em texto -->
-  <strong>Streamlit</strong>
-  &nbsp;&nbsp;
-  <strong>Automation Edge</strong>
-  &nbsp;&nbsp;
-  <strong>OpenAI</strong>
-  &nbsp;&nbsp;
-  <strong>Claude (Anthropic)</strong>
-  &nbsp;&nbsp;
-  <strong>DBeaver</strong>
 
 </div>
 
