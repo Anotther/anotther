@@ -1,7 +1,7 @@
 ## Hi there, My Name is Léo 👋
 
 <p align="center">
-  <strong>Analista de Dados</strong> com interesse em Análise e Ciência de Dados, Programação, LLM, RPA, Automação, CX, Processos, Métodos e Inovação.
+  <strong>Analista de Dados</strong>.
 </p>
 
 ---
@@ -42,4 +42,4 @@
 
 ## 📫 &nbsp;Contato
 
-- **LinkedIn**: [Seu LinkedIn](#)
+- **LinkedIn**: [Meu LinkedIn](https://www.linkedin.com/in/leofortes/)
