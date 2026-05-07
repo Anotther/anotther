@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="860" height="440" viewBox="0 0 860 440">
+  <title>Animação de Perfil - Analista de Dados</title>
+  <desc>Ilustração animada demonstrando habilidades em análise de dados, SQL e pipelines.</desc>
 <defs>
   <style>
     text { font-family: "JetBrains Mono", "Fira Mono", monospace; }
