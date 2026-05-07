@@ -13,73 +13,79 @@
     <rect x="0" y="38" width="105" height="35" fill="#1e1e1e"/>
     <rect x="0" y="72" width="105" height="3" fill="#007acc"/>
     <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">query.sql</text>
-    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.083;0.084;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.077;0.078;1" dur="30s" repeatCount="indefinite"/>
   </g>
   <g opacity="0">
     <rect x="0" y="38" width="113" height="35" fill="#1e1e1e"/>
     <rect x="0" y="72" width="113" height="3" fill="#007acc"/>
     <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">analysis.py</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.083;0.084;0.167;0.168;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.077;0.078;0.154;0.155;1" dur="30s" repeatCount="indefinite"/>
   </g>
   <g opacity="0">
     <rect x="0" y="38" width="117" height="35" fill="#1e1e1e"/>
     <rect x="0" y="72" width="117" height="3" fill="#007acc"/>
     <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">dashboard.bi</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.167;0.168;0.250;0.251;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.154;0.155;0.231;0.232;1" dur="30s" repeatCount="indefinite"/>
   </g>
   <g opacity="0">
     <rect x="0" y="38" width="113" height="35" fill="#1e1e1e"/>
     <rect x="0" y="72" width="113" height="3" fill="#007acc"/>
     <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">ml_model.py</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.250;0.251;0.333;0.334;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.231;0.232;0.308;0.309;1" dur="30s" repeatCount="indefinite"/>
   </g>
   <g opacity="0">
     <rect x="0" y="38" width="100" height="35" fill="#1e1e1e"/>
     <rect x="0" y="72" width="100" height="3" fill="#007acc"/>
     <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">schema.sql</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.333;0.334;0.417;0.418;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.308;0.309;0.385;0.386;1" dur="30s" repeatCount="indefinite"/>
   </g>
   <g opacity="0">
     <rect x="0" y="38" width="83" height="35" fill="#1e1e1e"/>
     <rect x="0" y="72" width="83" height="3" fill="#007acc"/>
     <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">stats.py</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.417;0.418;0.500;0.501;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.385;0.386;0.462;0.463;1" dur="30s" repeatCount="indefinite"/>
   </g>
   <g opacity="0">
     <rect x="0" y="38" width="128" height="35" fill="#1e1e1e"/>
     <rect x="0" y="72" width="128" height="3" fill="#007acc"/>
     <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">etl_pipeline.py</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.500;0.501;0.583;0.584;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.462;0.463;0.539;0.540;1" dur="30s" repeatCount="indefinite"/>
   </g>
   <g opacity="0">
     <rect x="0" y="38" width="113" height="35" fill="#1e1e1e"/>
     <rect x="0" y="72" width="113" height="3" fill="#007acc"/>
     <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">bi_report.sql</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.583;0.584;0.667;0.668;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.539;0.540;0.616;0.617;1" dur="30s" repeatCount="indefinite"/>
   </g>
   <g opacity="0">
     <rect x="0" y="38" width="73" height="35" fill="#1e1e1e"/>
     <rect x="0" y="72" width="73" height="3" fill="#007acc"/>
     <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">viz.py</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.667;0.668;0.750;0.751;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.616;0.617;0.693;0.694;1" dur="30s" repeatCount="indefinite"/>
   </g>
   <g opacity="0">
     <rect x="0" y="38" width="103" height="35" fill="#1e1e1e"/>
     <rect x="0" y="72" width="103" height="3" fill="#007acc"/>
     <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">xgboost.py</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.750;0.751;0.833;0.834;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.693;0.694;0.770;0.771;1" dur="30s" repeatCount="indefinite"/>
   </g>
   <g opacity="0">
     <rect x="0" y="38" width="113" height="35" fill="#1e1e1e"/>
     <rect x="0" y="72" width="113" height="3" fill="#007acc"/>
     <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">optimize.sql</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.833;0.834;0.917;0.918;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.770;0.771;0.847;0.848;1" dur="30s" repeatCount="indefinite"/>
   </g>
   <g opacity="0">
     <rect x="0" y="38" width="103" height="35" fill="#1e1e1e"/>
     <rect x="0" y="72" width="103" height="3" fill="#007acc"/>
     <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">summary.md</text>
-    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.917;0.918;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.847;0.848;0.924;0.925;1" dur="30s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0">
+    <rect x="0" y="38" width="110" height="35" fill="#1e1e1e"/>
+    <rect x="0" y="72" width="110" height="3" fill="#007acc"/>
+    <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">supabase.js</text>
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.924;0.925;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
   <!-- ════════════════════════════════════════
@@ -115,7 +121,7 @@
     <text x="65" y="357" font-family="Courier New,monospace" font-size="13" fill="#6a9955">-- customer_id  |  total_revenue  |  total_orders</text>
     <text x="65" y="379" font-family="Courier New,monospace" font-size="13"><tspan fill="#6a9955">-- 12451        |  </tspan><tspan fill="#b5cea8">$5,234.00</tspan><tspan fill="#6a9955">       |  47</tspan></text>
     <text x="65" y="401" font-family="Courier New,monospace" font-size="13"><tspan fill="#6a9955">-- 12789        |  </tspan><tspan fill="#b5cea8">$3,891.50</tspan><tspan fill="#6a9955">       |  38</tspan></text>
-    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.083;0.084;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.077;0.078;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
   <!-- ════════════════════════════════════════
@@ -147,7 +153,7 @@
     <text x="65" y="335" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># (45230, 12) | 2.3% missing values</text>
     <text x="65" y="357" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># revenue mean: 2,345.67 | std: 456.89</text>
     <text x="65" y="379" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># corr(revenue, units): 0.847</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.083;0.084;0.167;0.168;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.077;0.078;0.154;0.155;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
   <!-- ════════════════════════════════════════
@@ -188,7 +194,7 @@
     <text x="262" y="460" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#858585">Apr</text>
     <text x="317" y="460" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#858585">May</text>
     <text x="372" y="460" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#858585">Jun</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.167;0.168;0.250;0.251;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.154;0.155;0.231;0.232;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
   <!-- ════════════════════════════════════════
@@ -219,7 +225,7 @@
     <text x="65" y="313" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># Accuracy: 94.2%</text>
     <text x="65" y="335" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># Precision: 0.951  |  Recall: 0.938</text>
     <text x="65" y="357" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># F1-Score: 0.944   |  AUC-ROC: 0.971</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.250;0.251;0.333;0.334;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.231;0.232;0.308;0.309;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
   <!-- ════════════════════════════════════════
@@ -251,7 +257,7 @@
     <text x="65" y="313" font-family="Courier New,monospace" font-size="13" fill="#6a9955">-- Star schema: 1 fact + 4 dimension tables</text>
     <text x="65" y="335" font-family="Courier New,monospace" font-size="13" fill="#6a9955">-- Total rows: 45.2M  |  Size: 8.7 GB</text>
     <text x="65" y="357" font-family="Courier New,monospace" font-size="13" fill="#6a9955">-- Avg query time: 120ms</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.333;0.334;0.417;0.418;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.308;0.309;0.385;0.386;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
   <!-- ════════════════════════════════════════
@@ -281,7 +287,7 @@
     <text x="65" y="313" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># t-stat: 2.847  |  p-value: 0.012 (p &lt; 0.05)</text>
     <text x="65" y="335" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># 95% CI: [2,134.2 — 2,556.1]</text>
     <text x="65" y="357" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># Pearson r: 0.847**  |  KS: normal dist confirmed</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.417;0.418;0.500;0.501;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.385;0.386;0.462;0.463;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
   <!-- ════════════════════════════════════════
@@ -324,7 +330,7 @@
     <text x="658" y="368" font-family="Courier New,monospace" font-size="12" fill="#9d9d9d">30%</text>
     <text x="80"  y="415" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#6a9955">&#x2713; SLA: 30min  |  Elapsed: 18min  |  Errors: 0</text>
     <text x="80"  y="437" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#858585">Rows processed: 2.1M / 2.3M</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.500;0.501;0.583;0.584;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.462;0.463;0.539;0.540;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
   <!-- ════════════════════════════════════════
@@ -369,7 +375,7 @@
     <text x="75"  y="360" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">All KPIs exceeded Q1 targets. Strong growth driven by</text>
     <text x="75"  y="380" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">product expansion in the LATAM market segment (+42%).</text>
     <text x="75"  y="420" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#6a9955">&#x2713; On track for annual revenue target of $12M</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.583;0.584;0.667;0.668;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.539;0.540;0.616;0.617;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
   <!-- ════════════════════════════════════════
@@ -405,7 +411,7 @@
     <text x="215" y="462" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#858585">East</text>
     <text x="275" y="462" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#858585">West</text>
     <text x="335" y="462" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#858585">Central</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.667;0.668;0.750;0.751;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.616;0.617;0.693;0.694;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
   <!-- ════════════════════════════════════════
@@ -436,7 +442,7 @@
     <text x="65" y="335" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># Feature importance:</text>
     <text x="65" y="357" font-family="Courier New,monospace" font-size="13" fill="#6a9955">#   age: 0.312  |  income: 0.278</text>
     <text x="65" y="379" font-family="Courier New,monospace" font-size="13" fill="#6a9955">#   score: 0.199  |  region: 0.211</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.750;0.751;0.833;0.834;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.693;0.694;0.770;0.771;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
   <!-- ════════════════════════════════════════
@@ -467,7 +473,7 @@
     <text x="65" y="313" font-family="Courier New,monospace" font-size="13" fill="#6a9955">--   Hash Join            (cost=1.2..34.5)</text>
     <text x="65" y="335" font-family="Courier New,monospace" font-size="13" fill="#4ec9b0">--   Execution: 12.3ms  (was: 234ms before index)</text>
     <text x="65" y="357" font-family="Courier New,monospace" font-size="13" fill="#4ec9b0">--   Performance gain: 95% improvement</text>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.833;0.834;0.917;0.918;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.770;0.771;0.847;0.848;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
   <!-- ════════════════════════════════════════
@@ -501,7 +507,40 @@
     <text x="450" y="418" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#6a9955">&#x2713; All Q1 targets exceeded  |  Data pipeline: 99.8% uptime  |  Models retrained monthly</text>
     <text x="450" y="440" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#569cd6">SQL &#x2022; Python &#x2022; Power BI &#x2022; Machine Learning &#x2022; ETL &#x2022; Statistics &#x2022; Data Engineering</text>
     <text x="450" y="460" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#858585">Data Analyst &amp; Data Engineer  |  Analytics Studio v2.0</text>
-    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.917;0.918;1" dur="30s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.847;0.848;0.924;0.925;1" dur="30s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- ════════════════════════════════════════
+       PANEL 13 — Supabase Backend
+       ════════════════════════════════════════ -->
+  <g opacity="0">
+    <rect x="0" y="75" width="900" height="405" fill="#1e1e1e"/>
+    <text x="44" y="115" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">1</text>
+    <text x="44" y="137" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">2</text>
+    <text x="44" y="159" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">3</text>
+    <text x="44" y="181" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">4</text>
+    <text x="44" y="203" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">5</text>
+    <text x="44" y="225" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">6</text>
+    <text x="44" y="247" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">7</text>
+    <text x="44" y="269" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">8</text>
+    <text x="44" y="291" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">9</text>
+    <text x="44" y="313" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">10</text>
+    <text x="44" y="335" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">11</text>
+    <text x="44" y="357" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">12</text>
+    <text x="65" y="115" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">import</tspan><tspan fill="#d4d4d4"> </tspan><tspan fill="#d4d4d4">{</tspan><tspan fill="#d4d4d4"> createClient </tspan><tspan fill="#d4d4d4">}</tspan><tspan fill="#d4d4d4"> </tspan><tspan fill="#569cd6">from</tspan><tspan fill="#d4d4d4"> </tspan><tspan fill="#ce9178">'@supabase/supabase-js'</tspan></text>
+    <text x="65" y="137" font-family="Courier New,monospace" font-size="13" fill="#d4d4d4"> </text>
+    <text x="65" y="159" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">const supabase = </tspan><tspan fill="#dcdcaa">createClient</tspan><tspan fill="#d4d4d4">(</tspan></text>
+    <text x="65" y="181" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">  </tspan><tspan fill="#ce9178">'https://xyz.supabase.co'</tspan><tspan fill="#d4d4d4">,</tspan></text>
+    <text x="65" y="203" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">  </tspan><tspan fill="#ce9178">'public-anon-key'</tspan></text>
+    <text x="65" y="225" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">)</tspan></text>
+    <text x="65" y="247" font-family="Courier New,monospace" font-size="13" fill="#d4d4d4"> </text>
+    <text x="65" y="269" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">const </tspan><tspan fill="#d4d4d4">{</tspan><tspan fill="#d4d4d4"> data, error </tspan><tspan fill="#d4d4d4">}</tspan><tspan fill="#d4d4d4"> = </tspan><tspan fill="#569cd6">await</tspan></text>
+    <text x="65" y="291" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">  supabase.</tspan><tspan fill="#dcdcaa">from</tspan><tspan fill="#d4d4d4">(</tspan><tspan fill="#ce9178">'users'</tspan><tspan fill="#d4d4d4">)</tspan></text>
+    <text x="65" y="313" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">    .</tspan><tspan fill="#dcdcaa">select</tspan><tspan fill="#d4d4d4">(</tspan><tspan fill="#ce9178">'*'</tspan><tspan fill="#d4d4d4">)</tspan></text>
+    <text x="65" y="335" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">    .</tspan><tspan fill="#dcdcaa">eq</tspan><tspan fill="#d4d4d4">(</tspan><tspan fill="#ce9178">'auth_id'</tspan><tspan fill="#d4d4d4">, user.id)</tspan></text>
+    <text x="65" y="357" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># Real-time subscriptions, Row Level Security, PostgreSQL ✓</text>
+    <text x="65" y="379" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># Edge Functions, Vectors (pgvector), Storage, Auth ✓</text>
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.924;0.925;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
 </svg>
