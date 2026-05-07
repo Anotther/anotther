@@ -1,3 +1,3 @@
 <div align="center">
-  <img src="profile-animation.svg" width="860" alt="Profile Animation"/>
+  <img src="assets/profile-animation.svg" width="900" alt="Profile Animation"/>
 </div>
