@@ -1,497 +1,546 @@
 <svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      .vs-code-bg { fill: #1e1e1e; }
-      .header-bg { fill: #252526; }
-      .tab-active { fill: #1e1e1e; stroke: none; }
-      .tab-inactive { fill: #2d2d30; stroke: none; }
-      .tab-text { font-family: 'Segoe UI', sans-serif; font-size: 13px; fill: #a0a0a0; }
-      .tab-text-active { fill: #ffffff; }
-      .code-text { font-family: 'Courier New', monospace; font-size: 12px; }
-      .keyword { fill: #569cd6; }
-      .string { fill: #ce9178; }
-      .comment { fill: #6a9955; }
-      .number { fill: #b5cea8; }
-      .function { fill: #dcdcaa; }
-      .operator { fill: #d4d4d4; }
-      .line-num { fill: #858585; font-family: 'Courier New', monospace; font-size: 11px; }
-      .toolbar-bg { fill: #333333; }
-    </style>
-  </defs>
 
-  <!-- Main background -->
-  <rect width="900" height="500" class="vs-code-bg"/>
-
-  <!-- VS Code Header -->
-  <rect width="900" height="35" class="header-bg"/>
-
-  <!-- Tab bar background -->
+  <!-- Static chrome -->
+  <rect width="900" height="35" fill="#252526"/>
+  <text x="450" y="22" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#9d9d9d">Data Analytics &amp; Engineering Studio</text>
   <rect y="35" width="900" height="40" fill="#2d2d30"/>
+  <rect y="75" width="900" height="405" fill="#1e1e1e"/>
+  <rect y="480" width="900" height="20" fill="#007acc"/>
+  <text x="10" y="494" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#ffffff">main  |  Python 3.11  |  UTF-8  |  Analytics Studio v2.0</text>
 
-  <!-- Tabs -->
-  <g id="tabs">
-    <rect x="10" y="40" width="120" height="30" class="tab-active" rx="3"/>
-    <text x="20" y="60" class="tab-text tab-text-active">query.sql</text>
-
-    <rect x="135" y="40" width="130" height="30" class="tab-inactive" rx="3"/>
-    <text x="145" y="60" class="tab-text">analysis.py</text>
-
-    <rect x="270" y="40" width="130" height="30" class="tab-inactive" rx="3"/>
-    <text x="280" y="60" class="tab-text">dashboard.bi</text>
-
-    <rect x="405" y="40" width="120" height="30" class="tab-inactive" rx="3"/>
-    <text x="415" y="60" class="tab-text">model.py</text>
+  <!-- ── ANIMATED TABS ── -->
+  <g opacity="1">
+    <rect x="0" y="38" width="105" height="35" fill="#1e1e1e"/>
+    <rect x="0" y="72" width="105" height="3" fill="#007acc"/>
+    <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">query.sql</text>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.077;0.078;1" dur="30s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0">
+    <rect x="0" y="38" width="113" height="35" fill="#1e1e1e"/>
+    <rect x="0" y="72" width="113" height="3" fill="#007acc"/>
+    <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">analysis.py</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.077;0.078;0.154;0.155;1" dur="30s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0">
+    <rect x="0" y="38" width="117" height="35" fill="#1e1e1e"/>
+    <rect x="0" y="72" width="117" height="3" fill="#007acc"/>
+    <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">dashboard.bi</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.154;0.155;0.231;0.232;1" dur="30s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0">
+    <rect x="0" y="38" width="113" height="35" fill="#1e1e1e"/>
+    <rect x="0" y="72" width="113" height="3" fill="#007acc"/>
+    <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">ml_model.py</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.231;0.232;0.308;0.309;1" dur="30s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0">
+    <rect x="0" y="38" width="100" height="35" fill="#1e1e1e"/>
+    <rect x="0" y="72" width="100" height="3" fill="#007acc"/>
+    <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">schema.sql</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.308;0.309;0.385;0.386;1" dur="30s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0">
+    <rect x="0" y="38" width="83" height="35" fill="#1e1e1e"/>
+    <rect x="0" y="72" width="83" height="3" fill="#007acc"/>
+    <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">stats.py</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.385;0.386;0.462;0.463;1" dur="30s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0">
+    <rect x="0" y="38" width="128" height="35" fill="#1e1e1e"/>
+    <rect x="0" y="72" width="128" height="3" fill="#007acc"/>
+    <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">etl_pipeline.py</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.462;0.463;0.539;0.540;1" dur="30s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0">
+    <rect x="0" y="38" width="113" height="35" fill="#1e1e1e"/>
+    <rect x="0" y="72" width="113" height="3" fill="#007acc"/>
+    <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">bi_report.sql</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.539;0.540;0.616;0.617;1" dur="30s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0">
+    <rect x="0" y="38" width="73" height="35" fill="#1e1e1e"/>
+    <rect x="0" y="72" width="73" height="3" fill="#007acc"/>
+    <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">viz.py</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.616;0.617;0.693;0.694;1" dur="30s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0">
+    <rect x="0" y="38" width="103" height="35" fill="#1e1e1e"/>
+    <rect x="0" y="72" width="103" height="3" fill="#007acc"/>
+    <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">xgboost.py</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.693;0.694;0.770;0.771;1" dur="30s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0">
+    <rect x="0" y="38" width="113" height="35" fill="#1e1e1e"/>
+    <rect x="0" y="72" width="113" height="3" fill="#007acc"/>
+    <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">optimize.sql</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.770;0.771;0.847;0.848;1" dur="30s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0">
+    <rect x="0" y="38" width="103" height="35" fill="#1e1e1e"/>
+    <rect x="0" y="72" width="103" height="3" fill="#007acc"/>
+    <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">summary.md</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.847;0.848;0.924;0.925;1" dur="30s" repeatCount="indefinite"/>
+  </g>
+  <g opacity="0">
+    <rect x="0" y="38" width="110" height="35" fill="#1e1e1e"/>
+    <rect x="0" y="72" width="110" height="3" fill="#007acc"/>
+    <text x="12" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#ffffff">supabase.js</text>
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.924;0.925;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Panel 1: SQL Query -->
-  <g id="panel1">
-    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
-
-    <!-- Line numbers -->
-    <text x="35" y="120" class="line-num">1</text>
-    <text x="35" y="145" class="line-num">2</text>
-    <text x="35" y="170" class="line-num">3</text>
-    <text x="35" y="195" class="line-num">4</text>
-    <text x="35" y="220" class="line-num">5</text>
-    <text x="35" y="245" class="line-num">6</text>
-    <text x="35" y="270" class="line-num">7</text>
-    <text x="35" y="295" class="line-num">8</text>
-
-    <!-- SQL Code -->
-    <text x="60" y="120" class="code-text"><tspan class="keyword">SELECT</tspan> customer_id, <tspan class="function">SUM</tspan>(amount)</text>
-    <text x="60" y="145" class="code-text"><tspan class="keyword">FROM</tspan> orders</text>
-    <text x="60" y="170" class="code-text"><tspan class="keyword">WHERE</tspan> date <tspan class="operator">&gt;=</tspan> <tspan class="string">'2024-01-01'</tspan></text>
-    <text x="60" y="195" class="code-text"><tspan class="keyword">GROUP BY</tspan> customer_id</text>
-    <text x="60" y="220" class="code-text"><tspan class="keyword">HAVING</tspan> <tspan class="function">SUM</tspan>(amount) <tspan class="operator">&gt;</tspan> <tspan class="number">1000</tspan></text>
-    <text x="60" y="245" class="code-text"><tspan class="keyword">ORDER BY</tspan> <tspan class="number">2</tspan> <tspan class="keyword">DESC</tspan>;</text>
-
-    <!-- Results table -->
-    <text x="60" y="285" class="code-text" fill="#a0a0a0">Results:</text>
-    <text x="60" y="310" class="code-text"><tspan class="number">customer_id</tspan> <tspan fill="#858585">|</tspan> <tspan class="number">total</tspan></text>
-    <text x="60" y="330" class="code-text"><tspan class="number">12451</tspan> <tspan fill="#858585">|</tspan> <tspan class="number">$5,234</tspan></text>
-    <text x="60" y="350" class="code-text"><tspan class="number">12789</tspan> <tspan fill="#858585">|</tspan> <tspan class="number">$3,891</tspan></text>
-
-    <text x="60" y="380" class="code-text" fill="#a0a0a0"><tspan class="comment">-- Query executed: 245ms</tspan></text>
-
-    <opacity_animate1>
-      <animate attributeName="opacity"
-        values="1;1;1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1"
-        keyTimes="0;0.08;0.25;0.267;0.333;0.4;0.467;0.533;0.6;0.667;0.733;1"
-        dur="30s" repeatCount="indefinite"/>
-    </opacity_animate1>
+  <!-- ════════════════════════════════════════
+       PANEL 1 — SQL Query
+       ════════════════════════════════════════ -->
+  <g opacity="1">
+    <rect x="0" y="75" width="900" height="405" fill="#1e1e1e"/>
+    <text x="44" y="115" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">1</text>
+    <text x="44" y="137" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">2</text>
+    <text x="44" y="159" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">3</text>
+    <text x="44" y="181" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">4</text>
+    <text x="44" y="203" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">5</text>
+    <text x="44" y="225" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">6</text>
+    <text x="44" y="247" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">7</text>
+    <text x="44" y="269" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">8</text>
+    <text x="44" y="291" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">9</text>
+    <text x="44" y="313" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">10</text>
+    <text x="44" y="335" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">11</text>
+    <text x="44" y="357" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">12</text>
+    <text x="44" y="379" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">13</text>
+    <text x="44" y="401" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">14</text>
+    <text x="65" y="115" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">SELECT</tspan></text>
+    <text x="65" y="137" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">  customer_id,</tspan></text>
+    <text x="65" y="159" font-family="Courier New,monospace" font-size="13"><tspan fill="#dcdcaa">  SUM</tspan><tspan fill="#d4d4d4">(amount) </tspan><tspan fill="#569cd6">AS</tspan><tspan fill="#d4d4d4"> total_revenue,</tspan></text>
+    <text x="65" y="181" font-family="Courier New,monospace" font-size="13"><tspan fill="#dcdcaa">  COUNT</tspan><tspan fill="#d4d4d4">(*) </tspan><tspan fill="#569cd6">AS</tspan><tspan fill="#d4d4d4"> total_orders</tspan></text>
+    <text x="65" y="203" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">FROM</tspan><tspan fill="#d4d4d4"> orders</tspan></text>
+    <text x="65" y="225" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">WHERE</tspan><tspan fill="#d4d4d4"> status = </tspan><tspan fill="#ce9178">'completed'</tspan></text>
+    <text x="65" y="247" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">  AND</tspan><tspan fill="#d4d4d4"> created_at &gt;= </tspan><tspan fill="#ce9178">'2024-01-01'</tspan></text>
+    <text x="65" y="269" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">GROUP BY</tspan><tspan fill="#d4d4d4"> customer_id</tspan></text>
+    <text x="65" y="291" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">HAVING</tspan><tspan fill="#d4d4d4"> </tspan><tspan fill="#dcdcaa">SUM</tspan><tspan fill="#d4d4d4">(amount) &gt; </tspan><tspan fill="#b5cea8">1000</tspan></text>
+    <text x="65" y="313" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">ORDER BY</tspan><tspan fill="#d4d4d4"> total_revenue </tspan><tspan fill="#569cd6">DESC</tspan><tspan fill="#d4d4d4">;</tspan></text>
+    <text x="65" y="335" font-family="Courier New,monospace" font-size="13" fill="#6a9955">-- Executed: 245ms  |  2,847 rows returned</text>
+    <text x="65" y="357" font-family="Courier New,monospace" font-size="13" fill="#6a9955">-- customer_id  |  total_revenue  |  total_orders</text>
+    <text x="65" y="379" font-family="Courier New,monospace" font-size="13"><tspan fill="#6a9955">-- 12451        |  </tspan><tspan fill="#b5cea8">$5,234.00</tspan><tspan fill="#6a9955">       |  47</tspan></text>
+    <text x="65" y="401" font-family="Courier New,monospace" font-size="13"><tspan fill="#6a9955">-- 12789        |  </tspan><tspan fill="#b5cea8">$3,891.50</tspan><tspan fill="#6a9955">       |  38</tspan></text>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.077;0.078;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Panel 2: Python Data Analysis -->
-  <g id="panel2" opacity="0.1">
-    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
-
-    <text x="35" y="120" class="line-num">1</text>
-    <text x="35" y="145" class="line-num">2</text>
-    <text x="35" y="170" class="line-num">3</text>
-    <text x="35" y="195" class="line-num">4</text>
-    <text x="35" y="220" class="line-num">5</text>
-    <text x="35" y="245" class="line-num">6</text>
-    <text x="35" y="270" class="line-num">7</text>
-    <text x="35" y="295" class="line-num">8</text>
-    <text x="35" y="320" class="line-num">9</text>
-
-    <text x="60" y="120" class="code-text"><tspan class="keyword">import</tspan> pandas <tspan class="keyword">as</tspan> pd</text>
-    <text x="60" y="145" class="code-text"><tspan class="keyword">import</tspan> numpy <tspan class="keyword">as</tspan> np</text>
-    <text x="60" y="170" class="code-text"><tspan class="keyword">import</tspan> matplotlib.pyplot <tspan class="keyword">as</tspan> plt</text>
-    <text x="60" y="195" class="code-text"></text>
-    <text x="60" y="220" class="code-text">df <tspan class="operator">=</tspan> pd.<tspan class="function">read_csv</tspan>(<tspan class="string">'data.csv'</tspan>)</text>
-    <text x="60" y="245" class="code-text">summary <tspan class="operator">=</tspan> df.<tspan class="function">describe</tspan>()</text>
-    <text x="60" y="270" class="code-text">correlation <tspan class="operator">=</tspan> df.<tspan class="function">corr</tspan>()</text>
-    <text x="60" y="295" class="code-text">df.<tspan class="function">plot</tspan>(figsize<tspan class="operator">=</tspan>(<tspan class="number">12</tspan>, <tspan class="number">6</tspan>))</text>
-    <text x="60" y="320" class="code-text">plt.<tspan class="function">show</tspan>()</text>
-
-    <text x="60" y="350" class="code-text" fill="#a0a0a0">Mean: <tspan class="number">2345.67</tspan></text>
-    <text x="60" y="370" class="code-text" fill="#a0a0a0">Std Dev: <tspan class="number">456.89</tspan></text>
-    <text x="60" y="390" class="code-text" fill="#a0a0a0">Correlation: <tspan class="number">0.85</tspan></text>
-
-    <animate attributeName="opacity"
-      values="0.1;0.1;1;1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1"
-      keyTimes="0;0.08;0.25;0.342;0.367;0.433;0.5;0.567;0.633;0.7;0.767;1"
-      dur="30s" repeatCount="indefinite"/>
+  <!-- ════════════════════════════════════════
+       PANEL 2 — Python Analysis
+       ════════════════════════════════════════ -->
+  <g opacity="0">
+    <rect x="0" y="75" width="900" height="405" fill="#1e1e1e"/>
+    <text x="44" y="115" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">1</text>
+    <text x="44" y="137" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">2</text>
+    <text x="44" y="159" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">3</text>
+    <text x="44" y="181" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">4</text>
+    <text x="44" y="203" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">5</text>
+    <text x="44" y="225" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">6</text>
+    <text x="44" y="247" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">7</text>
+    <text x="44" y="269" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">8</text>
+    <text x="44" y="291" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">9</text>
+    <text x="44" y="313" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">10</text>
+    <text x="44" y="335" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">11</text>
+    <text x="65" y="115" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">import</tspan><tspan fill="#d4d4d4"> pandas </tspan><tspan fill="#569cd6">as</tspan><tspan fill="#d4d4d4"> pd</tspan></text>
+    <text x="65" y="137" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">import</tspan><tspan fill="#d4d4d4"> numpy </tspan><tspan fill="#569cd6">as</tspan><tspan fill="#d4d4d4"> np</tspan></text>
+    <text x="65" y="159" font-family="Courier New,monospace" font-size="13" fill="#d4d4d4"> </text>
+    <text x="65" y="181" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">df = pd.</tspan><tspan fill="#dcdcaa">read_csv</tspan><tspan fill="#d4d4d4">(</tspan><tspan fill="#ce9178">'sales_data.csv'</tspan><tspan fill="#d4d4d4">)</tspan></text>
+    <text x="65" y="203" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">summary = df.</tspan><tspan fill="#dcdcaa">describe</tspan><tspan fill="#d4d4d4">()</tspan></text>
+    <text x="65" y="225" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">missing = df.</tspan><tspan fill="#dcdcaa">isnull</tspan><tspan fill="#d4d4d4">().</tspan><tspan fill="#dcdcaa">sum</tspan><tspan fill="#d4d4d4">()</tspan></text>
+    <text x="65" y="247" font-family="Courier New,monospace" font-size="13" fill="#d4d4d4"> </text>
+    <text x="65" y="269" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">monthly = df.</tspan><tspan fill="#dcdcaa">groupby</tspan><tspan fill="#d4d4d4">(</tspan><tspan fill="#ce9178">'month'</tspan><tspan fill="#d4d4d4">)[</tspan><tspan fill="#ce9178">'revenue'</tspan><tspan fill="#d4d4d4">].</tspan><tspan fill="#dcdcaa">sum</tspan><tspan fill="#d4d4d4">()</tspan></text>
+    <text x="65" y="291" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">corr = df[[</tspan><tspan fill="#ce9178">'revenue'</tspan><tspan fill="#d4d4d4">, </tspan><tspan fill="#ce9178">'units'</tspan><tspan fill="#d4d4d4">]].</tspan><tspan fill="#dcdcaa">corr</tspan><tspan fill="#d4d4d4">()</tspan></text>
+    <text x="65" y="313" font-family="Courier New,monospace" font-size="13"><tspan fill="#dcdcaa">print</tspan><tspan fill="#d4d4d4">(</tspan><tspan fill="#ce9178">f"Shape: {df.shape}"</tspan><tspan fill="#d4d4d4">)</tspan></text>
+    <text x="65" y="335" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># (45230, 12) | 2.3% missing values</text>
+    <text x="65" y="357" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># revenue mean: 2,345.67 | std: 456.89</text>
+    <text x="65" y="379" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># corr(revenue, units): 0.847</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.077;0.078;0.154;0.155;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Panel 3: Power BI Dashboard -->
-  <g id="panel3" opacity="0.1">
-    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
-
-    <text x="60" y="130" class="code-text" fill="#ffffff" font-weight="bold">📊 Business Dashboard</text>
-
-    <!-- KPI Cards -->
-    <rect x="50" y="160" width="180" height="80" fill="#264f78" stroke="#3d6ba3" stroke-width="1" rx="4"/>
-    <text x="70" y="180" class="code-text" fill="#a0a0a0">Total Revenue</text>
-    <text x="70" y="210" class="code-text" fill="#4ec9b0" font-size="20">$2.4M</text>
-    <text x="70" y="230" class="code-text" fill="#6a9955" font-size="11">↑ 12.5%</text>
-
-    <rect x="250" y="160" width="180" height="80" fill="#6f3e2d" stroke="#a05a3d" stroke-width="1" rx="4"/>
-    <text x="270" y="180" class="code-text" fill="#a0a0a0">Active Users</text>
-    <text x="270" y="210" class="code-text" fill="#4ec9b0" font-size="20">12.5K</text>
-    <text x="270" y="230" class="code-text" fill="#6a9955" font-size="11">↑ 8.3%</text>
-
-    <rect x="450" y="160" width="180" height="80" fill="#3d5a3d" stroke="#5a8a5a" stroke-width="1" rx="4"/>
-    <text x="470" y="180" class="code-text" fill="#a0a0a0">Conversion Rate</text>
-    <text x="470" y="210" class="code-text" fill="#4ec9b0" font-size="20">3.8%</text>
-    <text x="470" y="230" class="code-text" fill="#6a9955" font-size="11">↑ 2.1%</text>
-
-    <rect x="650" y="160" width="180" height="80" fill="#4a3d6f" stroke="#6a5d9f" stroke-width="1" rx="4"/>
-    <text x="670" y="180" class="code-text" fill="#a0a0a0">Avg Order Value</text>
-    <text x="670" y="210" class="code-text" fill="#4ec9b0" font-size="20">$187.50</text>
-    <text x="670" y="230" class="code-text" fill="#6a9955" font-size="11">↑ 5.2%</text>
-
-    <!-- Chart bars -->
-    <text x="60" y="290" class="code-text" fill="#a0a0a0">Monthly Trend</text>
-    <rect x="60" y="310" width="30" height="20" fill="#569cd6" opacity="0.6"/>
-    <rect x="100" y="310" width="35" height="30" fill="#569cd6" opacity="0.7"/>
-    <rect x="145" y="310" width="40" height="40" fill="#569cd6" opacity="0.8"/>
-    <rect x="195" y="310" width="38" height="35" fill="#569cd6" opacity="0.75"/>
-    <rect x="240" y="310" width="42" height="45" fill="#569cd6" opacity="0.85"/>
-    <rect x="290" y="310" width="35" height="38" fill="#569cd6" opacity="0.78"/>
-
-    <animate attributeName="opacity"
-      values="0.1;0.1;0.1;1;1;0.1;0.1;0.1;0.1;0.1;0.1;0.1"
-      keyTimes="0;0.08;0.25;0.342;0.417;0.442;0.508;0.575;0.642;0.708;0.775;1"
-      dur="30s" repeatCount="indefinite"/>
+  <!-- ════════════════════════════════════════
+       PANEL 3 — Power BI Dashboard
+       ════════════════════════════════════════ -->
+  <g opacity="0">
+    <rect x="0" y="75" width="900" height="405" fill="#1e1e1e"/>
+    <text x="450" y="112" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Business Intelligence Dashboard</text>
+    <text x="450" y="132" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#858585">Q1 2024  |  Last updated: 07 May 2025</text>
+    <!-- KPI cards -->
+    <rect x="60"  y="150" width="170" height="80" fill="#264f78" rx="4"/>
+    <text x="145" y="170" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#9d9d9d">Total Revenue</text>
+    <text x="145" y="200" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="bold" fill="#4ec9b0">$2.4M</text>
+    <text x="145" y="220" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#6a9955">&#x2191; +12.5% vs Q1 2023</text>
+    <rect x="248" y="150" width="170" height="80" fill="#6f3e2d" rx="4"/>
+    <text x="333" y="170" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#9d9d9d">Active Users</text>
+    <text x="333" y="200" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="bold" fill="#4ec9b0">12.5K</text>
+    <text x="333" y="220" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#6a9955">&#x2191; +8.3% growth</text>
+    <rect x="436" y="150" width="170" height="80" fill="#3d5a3d" rx="4"/>
+    <text x="521" y="170" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#9d9d9d">Conversion Rate</text>
+    <text x="521" y="200" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="bold" fill="#4ec9b0">3.8%</text>
+    <text x="521" y="220" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#6a9955">&#x2191; +2.1 pp YoY</text>
+    <rect x="624" y="150" width="192" height="80" fill="#4a3d6f" rx="4"/>
+    <text x="720" y="170" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#9d9d9d">Avg Order Value</text>
+    <text x="720" y="200" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="bold" fill="#4ec9b0">$187.50</text>
+    <text x="720" y="220" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#6a9955">&#x2191; +5.2% increase</text>
+    <!-- Bar chart -->
+    <text x="65" y="268" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#9d9d9d">Monthly Revenue Trend</text>
+    <rect x="75"  y="385" width="45" height="60"  fill="#569cd6" opacity="0.8"/>
+    <rect x="130" y="365" width="45" height="80"  fill="#569cd6" opacity="0.85"/>
+    <rect x="185" y="345" width="45" height="100" fill="#569cd6" opacity="0.9"/>
+    <rect x="240" y="355" width="45" height="90"  fill="#4ec9b0" opacity="0.9"/>
+    <rect x="295" y="330" width="45" height="115" fill="#4ec9b0" opacity="0.95"/>
+    <rect x="350" y="310" width="45" height="135" fill="#4ec9b0"/>
+    <text x="97"  y="460" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#858585">Jan</text>
+    <text x="152" y="460" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#858585">Feb</text>
+    <text x="207" y="460" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#858585">Mar</text>
+    <text x="262" y="460" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#858585">Apr</text>
+    <text x="317" y="460" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#858585">May</text>
+    <text x="372" y="460" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#858585">Jun</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.154;0.155;0.231;0.232;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Panel 4: Machine Learning Model -->
-  <g id="panel4" opacity="0.1">
-    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
-
-    <text x="35" y="120" class="line-num">1</text>
-    <text x="35" y="145" class="line-num">2</text>
-    <text x="35" y="170" class="line-num">3</text>
-    <text x="35" y="195" class="line-num">4</text>
-    <text x="35" y="220" class="line-num">5</text>
-    <text x="35" y="245" class="line-num">6</text>
-    <text x="35" y="270" class="line-num">7</text>
-    <text x="35" y="295" class="line-num">8</text>
-
-    <text x="60" y="120" class="code-text"><tspan class="keyword">from</tspan> sklearn <tspan class="keyword">import</tspan> ensemble</text>
-    <text x="60" y="145" class="code-text"><tspan class="keyword">from</tspan> sklearn.model_selection <tspan class="keyword">import</tspan> train_test_split</text>
-    <text x="60" y="170" class="code-text"></text>
-    <text x="60" y="195" class="code-text">X_train, X_test, y_train, y_test <tspan class="operator">=</tspan></text>
-    <text x="80" y="220" class="code-text">train_test_split(X, y, test_size<tspan class="operator">=</tspan><tspan class="number">0.2</tspan>)</text>
-    <text x="60" y="245" class="code-text">model <tspan class="operator">=</tspan> ensemble.<tspan class="function">RandomForestClassifier</tspan>(n_estimators<tspan class="operator">=</tspan><tspan class="number">100</tspan>)</text>
-    <text x="60" y="270" class="code-text">model.<tspan class="function">fit</tspan>(X_train, y_train)</text>
-    <text x="60" y="295" class="code-text">accuracy <tspan class="operator">=</tspan> model.<tspan class="function">score</tspan>(X_test, y_test)</text>
-
-    <text x="60" y="330" class="code-text" fill="#a0a0a0">Model Accuracy: <tspan class="number">94.2%</tspan></text>
-    <text x="60" y="350" class="code-text" fill="#a0a0a0">Precision: <tspan class="number">0.951</tspan></text>
-    <text x="60" y="370" class="code-text" fill="#a0a0a0">Recall: <tspan class="number">0.938</tspan></text>
-    <text x="60" y="390" class="code-text" fill="#a0a0a0">F1-Score: <tspan class="number">0.944</tspan></text>
-
-    <animate attributeName="opacity"
-      values="0.1;0.1;0.1;0.1;1;1;0.1;0.1;0.1;0.1;0.1;0.1"
-      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.517;0.583;0.65;0.717;0.783;1"
-      dur="30s" repeatCount="indefinite"/>
+  <!-- ════════════════════════════════════════
+       PANEL 4 — Machine Learning
+       ════════════════════════════════════════ -->
+  <g opacity="0">
+    <rect x="0" y="75" width="900" height="405" fill="#1e1e1e"/>
+    <text x="44" y="115" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">1</text>
+    <text x="44" y="137" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">2</text>
+    <text x="44" y="159" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">3</text>
+    <text x="44" y="181" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">4</text>
+    <text x="44" y="203" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">5</text>
+    <text x="44" y="225" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">6</text>
+    <text x="44" y="247" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">7</text>
+    <text x="44" y="269" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">8</text>
+    <text x="44" y="291" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">9</text>
+    <text x="44" y="313" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">10</text>
+    <text x="44" y="335" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">11</text>
+    <text x="65" y="115" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">from</tspan><tspan fill="#d4d4d4"> sklearn.ensemble </tspan><tspan fill="#569cd6">import</tspan><tspan fill="#d4d4d4"> RandomForestClassifier</tspan></text>
+    <text x="65" y="137" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">from</tspan><tspan fill="#d4d4d4"> sklearn.model_selection </tspan><tspan fill="#569cd6">import</tspan><tspan fill="#d4d4d4"> train_test_split</tspan></text>
+    <text x="65" y="159" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">from</tspan><tspan fill="#d4d4d4"> sklearn.metrics </tspan><tspan fill="#569cd6">import</tspan><tspan fill="#d4d4d4"> classification_report</tspan></text>
+    <text x="65" y="181" font-family="Courier New,monospace" font-size="13" fill="#d4d4d4"> </text>
+    <text x="65" y="203" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">X_train, X_test, y_train, y_test = </tspan><tspan fill="#dcdcaa">train_test_split</tspan><tspan fill="#d4d4d4">(X, y, test_size=</tspan><tspan fill="#b5cea8">0.2</tspan><tspan fill="#d4d4d4">)</tspan></text>
+    <text x="65" y="225" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">clf = </tspan><tspan fill="#dcdcaa">RandomForestClassifier</tspan><tspan fill="#d4d4d4">(n_estimators=</tspan><tspan fill="#b5cea8">100</tspan><tspan fill="#d4d4d4">, max_depth=</tspan><tspan fill="#b5cea8">8</tspan><tspan fill="#d4d4d4">)</tspan></text>
+    <text x="65" y="247" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">clf.</tspan><tspan fill="#dcdcaa">fit</tspan><tspan fill="#d4d4d4">(X_train, y_train)</tspan></text>
+    <text x="65" y="269" font-family="Courier New,monospace" font-size="13"><tspan fill="#dcdcaa">print</tspan><tspan fill="#d4d4d4">(</tspan><tspan fill="#dcdcaa">classification_report</tspan><tspan fill="#d4d4d4">(y_test, clf.</tspan><tspan fill="#dcdcaa">predict</tspan><tspan fill="#d4d4d4">(X_test)))</tspan></text>
+    <text x="65" y="291" font-family="Courier New,monospace" font-size="13" fill="#d4d4d4"> </text>
+    <text x="65" y="313" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># Accuracy: 94.2%</text>
+    <text x="65" y="335" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># Precision: 0.951  |  Recall: 0.938</text>
+    <text x="65" y="357" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># F1-Score: 0.944   |  AUC-ROC: 0.971</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.231;0.232;0.308;0.309;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Panel 5: Data Warehouse Schema -->
-  <g id="panel5" opacity="0.1">
-    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
-
-    <text x="35" y="120" class="line-num">1</text>
-    <text x="35" y="145" class="line-num">2</text>
-    <text x="35" y="170" class="line-num">3</text>
-    <text x="35" y="195" class="line-num">4</text>
-    <text x="35" y="220" class="line-num">5</text>
-    <text x="35" y="245" class="line-num">6</text>
-    <text x="35" y="270" class="line-num">7</text>
-
-    <text x="60" y="120" class="code-text"><tspan class="keyword">CREATE TABLE</tspan> dim_customers (</text>
-    <text x="80" y="145" class="code-text">customer_id <tspan class="keyword">INT PRIMARY KEY</tspan>,</text>
-    <text x="80" y="170" class="code-text">name <tspan class="keyword">VARCHAR</tspan>(<tspan class="number">255</tspan>),</text>
-    <text x="80" y="195" class="code-text">email <tspan class="keyword">VARCHAR</tspan>(<tspan class="number">255</tspan>) <tspan class="keyword">UNIQUE</tspan>,</text>
-    <text x="80" y="220" class="code-text">created_date <tspan class="keyword">DATE</tspan></text>
-    <text x="60" y="245" class="code-text">);</text>
-    <text x="60" y="270" class="code-text"><tspan class="keyword">CREATE INDEX</tspan> idx_email <tspan class="keyword">ON</tspan> dim_customers(email);</text>
-
-    <text x="60" y="310" class="code-text" fill="#a0a0a0">Schema Status:</text>
-    <text x="60" y="330" class="code-text" fill="#6a9955">✓ Tables: 24</text>
-    <text x="60" y="350" class="code-text" fill="#6a9955">✓ Indexes: 67</text>
-    <text x="60" y="370" class="code-text" fill="#6a9955">✓ Relationships: 42</text>
-    <text x="60" y="390" class="code-text" fill="#6a9955">✓ Total Size: 4.2GB</text>
-
-    <animate attributeName="opacity"
-      values="0.1;0.1;0.1;0.1;0.1;1;1;0.1;0.1;0.1;0.1;0.1"
-      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.567;0.592;0.658;0.725;0.792;1"
-      dur="30s" repeatCount="indefinite"/>
+  <!-- ════════════════════════════════════════
+       PANEL 5 — Data Warehouse Schema
+       ════════════════════════════════════════ -->
+  <g opacity="0">
+    <rect x="0" y="75" width="900" height="405" fill="#1e1e1e"/>
+    <text x="44" y="115" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">1</text>
+    <text x="44" y="137" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">2</text>
+    <text x="44" y="159" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">3</text>
+    <text x="44" y="181" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">4</text>
+    <text x="44" y="203" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">5</text>
+    <text x="44" y="225" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">6</text>
+    <text x="44" y="247" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">7</text>
+    <text x="44" y="269" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">8</text>
+    <text x="44" y="291" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">9</text>
+    <text x="44" y="313" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">10</text>
+    <text x="44" y="335" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">11</text>
+    <text x="44" y="357" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">12</text>
+    <text x="65" y="115" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">CREATE TABLE</tspan><tspan fill="#d4d4d4"> fact_sales (</tspan></text>
+    <text x="65" y="137" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">  sale_id     </tspan><tspan fill="#569cd6">INT PRIMARY KEY</tspan><tspan fill="#d4d4d4">,</tspan></text>
+    <text x="65" y="159" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">  date_id     </tspan><tspan fill="#569cd6">INT REFERENCES</tspan><tspan fill="#d4d4d4"> dim_date,</tspan></text>
+    <text x="65" y="181" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">  product_id  </tspan><tspan fill="#569cd6">INT REFERENCES</tspan><tspan fill="#d4d4d4"> dim_product,</tspan></text>
+    <text x="65" y="203" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">  customer_id </tspan><tspan fill="#569cd6">INT REFERENCES</tspan><tspan fill="#d4d4d4"> dim_customer,</tspan></text>
+    <text x="65" y="225" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">  amount      </tspan><tspan fill="#569cd6">DECIMAL</tspan><tspan fill="#d4d4d4">(</tspan><tspan fill="#b5cea8">10</tspan><tspan fill="#d4d4d4">,</tspan><tspan fill="#b5cea8">2</tspan><tspan fill="#d4d4d4">), units </tspan><tspan fill="#569cd6">INT</tspan></text>
+    <text x="65" y="247" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">);</tspan></text>
+    <text x="65" y="269" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">CREATE INDEX</tspan><tspan fill="#d4d4d4"> idx_date     </tspan><tspan fill="#569cd6">ON</tspan><tspan fill="#d4d4d4"> fact_sales(date_id);</tspan></text>
+    <text x="65" y="291" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">CREATE INDEX</tspan><tspan fill="#d4d4d4"> idx_customer </tspan><tspan fill="#569cd6">ON</tspan><tspan fill="#d4d4d4"> fact_sales(customer_id);</tspan></text>
+    <text x="65" y="313" font-family="Courier New,monospace" font-size="13" fill="#6a9955">-- Star schema: 1 fact + 4 dimension tables</text>
+    <text x="65" y="335" font-family="Courier New,monospace" font-size="13" fill="#6a9955">-- Total rows: 45.2M  |  Size: 8.7 GB</text>
+    <text x="65" y="357" font-family="Courier New,monospace" font-size="13" fill="#6a9955">-- Avg query time: 120ms</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.308;0.309;0.385;0.386;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Panel 6: Statistical Analysis -->
-  <g id="panel6" opacity="0.1">
-    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
-
-    <text x="35" y="120" class="line-num">1</text>
-    <text x="35" y="145" class="line-num">2</text>
-    <text x="35" y="170" class="line-num">3</text>
-    <text x="35" y="195" class="line-num">4</text>
-    <text x="35" y="220" class="line-num">5</text>
-    <text x="35" y="245" class="line-num">6</text>
-    <text x="35" y="270" class="line-num">7</text>
-
-    <text x="60" y="120" class="code-text"><tspan class="keyword">from</tspan> scipy <tspan class="keyword">import</tspan> stats</text>
-    <text x="60" y="145" class="code-text"></text>
-    <text x="60" y="170" class="code-text">mean <tspan class="operator">=</tspan> np.<tspan class="function">mean</tspan>(data)</text>
-    <text x="60" y="195" class="code-text">std_dev <tspan class="operator">=</tspan> np.<tspan class="function">std</tspan>(data)</text>
-    <text x="60" y="220" class="code-text">t_stat, p_value <tspan class="operator">=</tspan> stats.<tspan class="function">ttest_ind</tspan>(group1, group2)</text>
-    <text x="60" y="245" class="code-text">confidence_interval <tspan class="operator">=</tspan> stats.<tspan class="function">t.interval</tspan>(<tspan class="number">0.95</tspan>, df)</text>
-    <text x="60" y="270" class="code-text">correlation, pval <tspan class="operator">=</tspan> stats.<tspan class="function">pearsonr</tspan>(x, y)</text>
-
-    <text x="60" y="310" class="code-text" fill="#a0a0a0">Analysis Results:</text>
-    <text x="60" y="330" class="code-text" fill="#ce9178">Mean: <tspan class="number">2345.67</tspan> ± <tspan class="number">123.45</tspan></text>
-    <text x="60" y="350" class="code-text" fill="#ce9178">t-statistic: <tspan class="number">2.847</tspan> (p &lt; <tspan class="number">0.05</tspan>)</text>
-    <text x="60" y="370" class="code-text" fill="#ce9178">CI [<tspan class="number">2134.2</tspan>, <tspan class="number">2556.1</tspan>]</text>
-    <text x="60" y="390" class="code-text" fill="#ce9178">Pearson r: <tspan class="number">0.847</tspan> **</text>
-
-    <animate attributeName="opacity"
-      values="0.1;0.1;0.1;0.1;0.1;0.1;1;1;0.1;0.1;0.1;0.1"
-      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.567;0.642;0.667;0.733;0.8;1"
-      dur="30s" repeatCount="indefinite"/>
+  <!-- ════════════════════════════════════════
+       PANEL 6 — Statistical Analysis
+       ════════════════════════════════════════ -->
+  <g opacity="0">
+    <rect x="0" y="75" width="900" height="405" fill="#1e1e1e"/>
+    <text x="44" y="115" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">1</text>
+    <text x="44" y="137" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">2</text>
+    <text x="44" y="159" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">3</text>
+    <text x="44" y="181" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">4</text>
+    <text x="44" y="203" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">5</text>
+    <text x="44" y="225" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">6</text>
+    <text x="44" y="247" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">7</text>
+    <text x="44" y="269" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">8</text>
+    <text x="44" y="291" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">9</text>
+    <text x="44" y="313" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">10</text>
+    <text x="65" y="115" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">from</tspan><tspan fill="#d4d4d4"> scipy </tspan><tspan fill="#569cd6">import</tspan><tspan fill="#d4d4d4"> stats</tspan></text>
+    <text x="65" y="137" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">import</tspan><tspan fill="#d4d4d4"> numpy </tspan><tspan fill="#569cd6">as</tspan><tspan fill="#d4d4d4"> np</tspan></text>
+    <text x="65" y="159" font-family="Courier New,monospace" font-size="13" fill="#d4d4d4"> </text>
+    <text x="65" y="181" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">t_stat, p_value = stats.</tspan><tspan fill="#dcdcaa">ttest_ind</tspan><tspan fill="#d4d4d4">(group_a, group_b)</tspan></text>
+    <text x="65" y="203" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">ci = stats.t.</tspan><tspan fill="#dcdcaa">interval</tspan><tspan fill="#d4d4d4">(</tspan><tspan fill="#b5cea8">0.95</tspan><tspan fill="#d4d4d4">, df=</tspan><tspan fill="#dcdcaa">len</tspan><tspan fill="#d4d4d4">(data)-</tspan><tspan fill="#b5cea8">1</tspan><tspan fill="#d4d4d4">, loc=np.</tspan><tspan fill="#dcdcaa">mean</tspan><tspan fill="#d4d4d4">(data))</tspan></text>
+    <text x="65" y="225" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">r, pval = stats.</tspan><tspan fill="#dcdcaa">pearsonr</tspan><tspan fill="#d4d4d4">(x, y)</tspan></text>
+    <text x="65" y="247" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">ks_stat, ks_p = stats.</tspan><tspan fill="#dcdcaa">kstest</tspan><tspan fill="#d4d4d4">(data, </tspan><tspan fill="#ce9178">'norm'</tspan><tspan fill="#d4d4d4">)</tspan></text>
+    <text x="65" y="269" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">shapiro_w, shapiro_p = stats.</tspan><tspan fill="#dcdcaa">shapiro</tspan><tspan fill="#d4d4d4">(data)</tspan></text>
+    <text x="65" y="291" font-family="Courier New,monospace" font-size="13" fill="#d4d4d4"> </text>
+    <text x="65" y="313" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># t-stat: 2.847  |  p-value: 0.012 (p &lt; 0.05)</text>
+    <text x="65" y="335" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># 95% CI: [2,134.2 — 2,556.1]</text>
+    <text x="65" y="357" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># Pearson r: 0.847**  |  KS: normal dist confirmed</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.385;0.386;0.462;0.463;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Panel 7: ETL Pipeline -->
-  <g id="panel7" opacity="0.1">
-    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
-
-    <text x="60" y="130" class="code-text" fill="#ffffff" font-weight="bold">⚙️ ETL Pipeline</text>
-
-    <!-- Pipeline stages -->
-    <rect x="50" y="160" width="100" height="60" fill="#264f78" stroke="#3d6ba3" stroke-width="2" rx="4"/>
-    <text x="70" y="175" class="code-text" fill="#4ec9b0" font-weight="bold">EXTRACT</text>
-    <text x="65" y="195" class="code-text" fill="#a0a0a0" font-size="10">Source DB</text>
-    <text x="65" y="210" class="code-text" fill="#a0a0a0" font-size="10">→ 2.3M rows</text>
-
-    <!-- Arrow -->
-    <line x1="160" y1="190" x2="195" y2="190" stroke="#569cd6" stroke-width="2"/>
-    <polygon points="195,190 185,185 185,195" fill="#569cd6"/>
-
-    <rect x="210" y="160" width="100" height="60" fill="#6f3e2d" stroke="#a05a3d" stroke-width="2" rx="4"/>
-    <text x="230" y="175" class="code-text" fill="#4ec9b0" font-weight="bold">TRANSFORM</text>
-    <text x="225" y="195" class="code-text" fill="#a0a0a0" font-size="10">Clean & Enrich</text>
-    <text x="225" y="210" class="code-text" fill="#a0a0a0" font-size="10">→ 2.1M rows</text>
-
-    <!-- Arrow -->
-    <line x1="320" y1="190" x2="355" y2="190" stroke="#569cd6" stroke-width="2"/>
-    <polygon points="355,190 345,185 345,195" fill="#569cd6"/>
-
-    <rect x="370" y="160" width="100" height="60" fill="#3d5a3d" stroke="#5a8a5a" stroke-width="2" rx="4"/>
-    <text x="390" y="175" class="code-text" fill="#4ec9b0" font-weight="bold">LOAD</text>
-    <text x="385" y="195" class="code-text" fill="#a0a0a0" font-size="10">Data Warehouse</text>
-    <text x="385" y="210" class="code-text" fill="#a0a0a0" font-size="10">→ Ready</text>
-
+  <!-- ════════════════════════════════════════
+       PANEL 7 — ETL Pipeline
+       ════════════════════════════════════════ -->
+  <g opacity="0">
+    <rect x="0" y="75" width="900" height="405" fill="#1e1e1e"/>
+    <text x="450" y="112" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#ffffff">ETL Pipeline Monitor</text>
+    <text x="450" y="132" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#858585">Run ID: etl_20240507_001  |  Started: 14:23:05</text>
+    <!-- Pipeline boxes -->
+    <rect x="75"  y="158" width="135" height="75" fill="#1e3a5f" stroke="#569cd6" stroke-width="2" rx="5"/>
+    <text x="142" y="182" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#569cd6">EXTRACT</text>
+    <text x="142" y="200" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#9d9d9d">Source: PostgreSQL</text>
+    <text x="142" y="218" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#6a9955">&#x2713; 2.3M rows</text>
+    <line x1="214" y1="195" x2="254" y2="195" stroke="#569cd6" stroke-width="2"/>
+    <polygon points="254,195 244,190 244,200" fill="#569cd6"/>
+    <rect x="262" y="158" width="135" height="75" fill="#5a2d0c" stroke="#ce9178" stroke-width="2" rx="5"/>
+    <text x="329" y="182" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#ce9178">TRANSFORM</text>
+    <text x="329" y="200" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#9d9d9d">Clean + Enrich</text>
+    <text x="329" y="218" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#dcdcaa">&#x2699; Processing…</text>
+    <line x1="401" y1="195" x2="441" y2="195" stroke="#569cd6" stroke-width="2"/>
+    <polygon points="441,195 431,190 431,200" fill="#569cd6"/>
+    <rect x="449" y="158" width="135" height="75" fill="#1a3a1a" stroke="#6a9955" stroke-width="2" rx="5"/>
+    <text x="516" y="182" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6a9955">LOAD</text>
+    <text x="516" y="200" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#9d9d9d">Target: Snowflake</text>
+    <text x="516" y="218" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#858585">&#x23F3; Pending</text>
     <!-- Progress bars -->
-    <text x="60" y="270" class="code-text" fill="#a0a0a0">Extraction Progress:</text>
-    <rect x="60" y="285" width="300" height="8" fill="#3e3e42" rx="2"/>
-    <rect x="60" y="285" width="270" height="8" fill="#569cd6" rx="2"/>
-    <text x="370" y="295" class="code-text" fill="#a0a0a0" font-size="11">90%</text>
-
-    <text x="60" y="320" class="code-text" fill="#a0a0a0">Transform Progress:</text>
-    <rect x="60" y="335" width="300" height="8" fill="#3e3e42" rx="2"/>
-    <rect x="60" y="335" width="210" height="8" fill="#dcdcaa" rx="2"/>
-    <text x="370" y="345" class="code-text" fill="#a0a0a0" font-size="11">70%</text>
-
-    <text x="60" y="370" class="code-text" fill="#a0a0a0">Load Progress:</text>
-    <rect x="60" y="385" width="300" height="8" fill="#3e3e42" rx="2"/>
-    <rect x="60" y="385" width="90" height="8" fill="#ce9178" rx="2"/>
-    <text x="370" y="395" class="code-text" fill="#a0a0a0" font-size="11">30%</text>
-
-    <animate attributeName="opacity"
-      values="0.1;0.1;0.1;0.1;0.1;0.1;0.1;1;1;0.1;0.1;0.1"
-      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.567;0.642;0.717;0.742;0.808;1"
-      dur="30s" repeatCount="indefinite"/>
+    <text x="80" y="278" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#9d9d9d">Pipeline Progress</text>
+    <text x="80"  y="308" font-family="Courier New,monospace" font-size="12" fill="#9d9d9d">Extract   </text>
+    <rect x="200" y="295" width="450" height="14" fill="#2d2d30" rx="3"/>
+    <rect x="200" y="295" width="405" height="14" fill="#569cd6" rx="3"/>
+    <text x="658" y="308" font-family="Courier New,monospace" font-size="12" fill="#9d9d9d">90%</text>
+    <text x="80"  y="338" font-family="Courier New,monospace" font-size="12" fill="#9d9d9d">Transform </text>
+    <rect x="200" y="325" width="450" height="14" fill="#2d2d30" rx="3"/>
+    <rect x="200" y="325" width="315" height="14" fill="#ce9178" rx="3"/>
+    <text x="658" y="338" font-family="Courier New,monospace" font-size="12" fill="#9d9d9d">70%</text>
+    <text x="80"  y="368" font-family="Courier New,monospace" font-size="12" fill="#9d9d9d">Load      </text>
+    <rect x="200" y="355" width="450" height="14" fill="#2d2d30" rx="3"/>
+    <rect x="200" y="355" width="135" height="14" fill="#6a9955" rx="3"/>
+    <text x="658" y="368" font-family="Courier New,monospace" font-size="12" fill="#9d9d9d">30%</text>
+    <text x="80"  y="415" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#6a9955">&#x2713; SLA: 30min  |  Elapsed: 18min  |  Errors: 0</text>
+    <text x="80"  y="437" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#858585">Rows processed: 2.1M / 2.3M</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.462;0.463;0.539;0.540;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Panel 8: Business Intelligence -->
-  <g id="panel8" opacity="0.1">
-    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
-
-    <text x="60" y="130" class="code-text" fill="#ffffff" font-weight="bold">📈 Business Analytics</text>
-
-    <!-- Metrics -->
-    <text x="60" y="160" class="code-text" fill="#a0a0a0">Q1 2024 Performance</text>
-
-    <rect x="60" y="180" width="200" height="50" fill="#2d2d30" stroke="#3e3e42" stroke-width="1" rx="3"/>
-    <text x="75" y="197" class="code-text" fill="#a0a0a0" font-size="11">Revenue Growth</text>
-    <text x="75" y="215" class="code-text" fill="#4ec9b0" font-size="18">+24.5%</text>
-    <text x="75" y="225" class="code-text" fill="#6a9955" font-size="10">vs Q1 2023</text>
-
-    <rect x="280" y="180" width="200" height="50" fill="#2d2d30" stroke="#3e3e42" stroke-width="1" rx="3"/>
-    <text x="295" y="197" class="code-text" fill="#a0a0a0" font-size="11">Customer Acquisition</text>
-    <text x="295" y="215" class="code-text" fill="#4ec9b0" font-size="18">+18.2%</text>
-    <text x="295" y="225" class="code-text" fill="#6a9955" font-size="10">New Customers</text>
-
-    <rect x="500" y="180" width="200" height="50" fill="#2d2d30" stroke="#3e3e42" stroke-width="1" rx="3"/>
-    <text x="515" y="197" class="code-text" fill="#a0a0a0" font-size="11">Market Share</text>
-    <text x="515" y="215" class="code-text" fill="#4ec9b0" font-size="18">$2.8B</text>
-    <text x="515" y="225" class="code-text" fill="#6a9955" font-size="10">Total TAM</text>
-
-    <!-- Pie chart representation -->
-    <text x="60" y="270" class="code-text" fill="#a0a0a0">Sales by Region</text>
-    <circle cx="130" cy="320" r="40" fill="#569cd6" opacity="0.8"/>
-    <circle cx="200" cy="320" r="35" fill="#ce9178" opacity="0.8"/>
-    <circle cx="260" cy="320" r="28" fill="#6a9955" opacity="0.8"/>
-    <circle cx="310" cy="320" r="25" fill="#dcdcaa" opacity="0.8"/>
-
-    <text x="60" y="375" class="code-text" fill="#a0a0a0" font-size="11">North: 35%</text>
-    <text x="200" y="375" class="code-text" fill="#a0a0a0" font-size="11">South: 28%</text>
-    <text x="340" y="375" class="code-text" fill="#a0a0a0" font-size="11">East: 22%</text>
-    <text x="480" y="375" class="code-text" fill="#a0a0a0" font-size="11">West: 15%</text>
-
-    <animate attributeName="opacity"
-      values="0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;1;1;0.1;0.1"
-      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.567;0.642;0.717;0.792;0.817;1"
-      dur="30s" repeatCount="indefinite"/>
+  <!-- ════════════════════════════════════════
+       PANEL 8 — BI Report
+       ════════════════════════════════════════ -->
+  <g opacity="0">
+    <rect x="0" y="75" width="900" height="405" fill="#1e1e1e"/>
+    <text x="450" y="112" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Business Intelligence Report</text>
+    <!-- Table header -->
+    <rect x="60" y="128" width="755" height="28" fill="#264f78" rx="2"/>
+    <text x="75"  y="148" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Metric</text>
+    <text x="330" y="148" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Q1 2024</text>
+    <text x="490" y="148" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Q1 2023</text>
+    <text x="650" y="148" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Change</text>
+    <!-- Rows -->
+    <rect x="60" y="156" width="755" height="28" fill="#2d2d30"/>
+    <text x="75"  y="175" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">Total Revenue</text>
+    <text x="330" y="175" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#4ec9b0">$2.4M</text>
+    <text x="490" y="175" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">$1.93M</text>
+    <text x="650" y="175" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#6a9955">+24.5% &#x2191;</text>
+    <rect x="60" y="184" width="755" height="28" fill="#1e1e1e"/>
+    <text x="75"  y="203" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">New Customers</text>
+    <text x="330" y="203" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#4ec9b0">4,231</text>
+    <text x="490" y="203" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">3,578</text>
+    <text x="650" y="203" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#6a9955">+18.2% &#x2191;</text>
+    <rect x="60" y="212" width="755" height="28" fill="#2d2d30"/>
+    <text x="75"  y="231" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">Churn Rate</text>
+    <text x="330" y="231" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#4ec9b0">3.2%</text>
+    <text x="490" y="231" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">5.1%</text>
+    <text x="650" y="231" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#6a9955">-1.9 pp &#x2193;</text>
+    <rect x="60" y="240" width="755" height="28" fill="#1e1e1e"/>
+    <text x="75"  y="259" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">Avg Order Value</text>
+    <text x="330" y="259" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#4ec9b0">$187.50</text>
+    <text x="490" y="259" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">$168.20</text>
+    <text x="650" y="259" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#6a9955">+11.5% &#x2191;</text>
+    <rect x="60" y="268" width="755" height="28" fill="#2d2d30"/>
+    <text x="75"  y="287" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">Net Promoter Score</text>
+    <text x="330" y="287" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#4ec9b0">72</text>
+    <text x="490" y="287" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">65</text>
+    <text x="650" y="287" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#6a9955">+7 pts &#x2191;</text>
+    <text x="75"  y="335" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="bold" fill="#569cd6">Key Insight:</text>
+    <text x="75"  y="360" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">All KPIs exceeded Q1 targets. Strong growth driven by</text>
+    <text x="75"  y="380" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">product expansion in the LATAM market segment (+42%).</text>
+    <text x="75"  y="420" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#6a9955">&#x2713; On track for annual revenue target of $12M</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.539;0.540;0.616;0.617;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Panel 9: Data Visualization -->
-  <g id="panel9" opacity="0.1">
-    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
-
-    <text x="60" y="130" class="code-text" fill="#ffffff" font-weight="bold">📊 Visualization Layer</text>
-
-    <!-- Stacked bar chart -->
-    <text x="60" y="160" class="code-text" fill="#a0a0a0">Monthly Sales Breakdown</text>
-
-    <rect x="60" y="175" width="25" height="30" fill="#569cd6"/>
-    <rect x="60" y="205" width="25" height="35" fill="#ce9178"/>
-    <rect x="60" y="240" width="25" height="20" fill="#6a9955"/>
-
-    <rect x="95" y="170" width="25" height="40" fill="#569cd6"/>
-    <rect x="95" y="210" width="25" height="30" fill="#ce9178"/>
-    <rect x="95" y="240" width="25" height="25" fill="#6a9955"/>
-
-    <rect x="130" y="160" width="25" height="50" fill="#569cd6"/>
-    <rect x="130" y="210" width="25" height="25" fill="#ce9178"/>
-    <rect x="130" y="235" width="25" height="30" fill="#6a9955"/>
-
-    <rect x="165" y="165" width="25" height="45" fill="#569cd6"/>
-    <rect x="165" y="210" width="25" height="28" fill="#ce9178"/>
-    <rect x="165" y="238" width="25" height="27" fill="#6a9955"/>
-
-    <rect x="200" y="180" width="25" height="30" fill="#569cd6"/>
-    <rect x="200" y="210" width="25" height="32" fill="#ce9178"/>
-    <rect x="200" y="242" width="25" height="23" fill="#6a9955"/>
-
-    <text x="60" y="290" class="code-text" fill="#a0a0a0" font-size="10">Jan</text>
-    <text x="95" y="290" class="code-text" fill="#a0a0a0" font-size="10">Feb</text>
-    <text x="130" y="290" class="code-text" fill="#a0a0a0" font-size="10">Mar</text>
-    <text x="165" y="290" class="code-text" fill="#a0a0a0" font-size="10">Apr</text>
-    <text x="200" y="290" class="code-text" fill="#a0a0a0" font-size="10">May</text>
-
-    <text x="280" y="160" class="code-text" fill="#a0a0a0">Legend:</text>
-    <rect x="280" y="175" width="12" height="12" fill="#569cd6"/>
-    <text x="300" y="183" class="code-text" fill="#a0a0a0" font-size="11">Product A</text>
-
-    <rect x="280" y="205" width="12" height="12" fill="#ce9178"/>
-    <text x="300" y="213" class="code-text" fill="#a0a0a0" font-size="11">Product B</text>
-
-    <rect x="280" y="235" width="12" height="12" fill="#6a9955"/>
-    <text x="300" y="243" class="code-text" fill="#a0a0a0" font-size="11">Product C</text>
-
-    <text x="60" y="330" class="code-text" fill="#a0a0a0" font-size="10">Total: $4.2M | Avg: $840K</text>
-    <text x="60" y="350" class="code-text" fill="#a0a0a0" font-size="10">YoY Growth: 18.5%</text>
-    <text x="60" y="370" class="code-text" fill="#6a9955" font-size="10">✓ All metrics on target</text>
-
-    <animate attributeName="opacity"
-      values="0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;1;1;0.1"
-      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.567;0.642;0.717;0.792;0.867;1"
-      dur="30s" repeatCount="indefinite"/>
+  <!-- ════════════════════════════════════════
+       PANEL 9 — Data Visualization
+       ════════════════════════════════════════ -->
+  <g opacity="0">
+    <rect x="0" y="75" width="900" height="405" fill="#1e1e1e"/>
+    <text x="44" y="115" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">1</text>
+    <text x="44" y="137" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">2</text>
+    <text x="44" y="159" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">3</text>
+    <text x="44" y="181" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">4</text>
+    <text x="44" y="203" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">5</text>
+    <text x="44" y="225" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">6</text>
+    <text x="44" y="247" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">7</text>
+    <text x="44" y="269" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">8</text>
+    <text x="65" y="115" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">import</tspan><tspan fill="#d4d4d4"> matplotlib.pyplot </tspan><tspan fill="#569cd6">as</tspan><tspan fill="#d4d4d4"> plt</tspan></text>
+    <text x="65" y="137" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">import</tspan><tspan fill="#d4d4d4"> seaborn </tspan><tspan fill="#569cd6">as</tspan><tspan fill="#d4d4d4"> sns</tspan></text>
+    <text x="65" y="159" font-family="Courier New,monospace" font-size="13" fill="#d4d4d4"> </text>
+    <text x="65" y="181" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">fig, axes = plt.</tspan><tspan fill="#dcdcaa">subplots</tspan><tspan fill="#d4d4d4">(</tspan><tspan fill="#b5cea8">1</tspan><tspan fill="#d4d4d4">, </tspan><tspan fill="#b5cea8">3</tspan><tspan fill="#d4d4d4">, figsize=(</tspan><tspan fill="#b5cea8">15</tspan><tspan fill="#d4d4d4">, </tspan><tspan fill="#b5cea8">5</tspan><tspan fill="#d4d4d4">))</tspan></text>
+    <text x="65" y="203" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">sns.</tspan><tspan fill="#dcdcaa">histplot</tspan><tspan fill="#d4d4d4">(data[</tspan><tspan fill="#ce9178">'revenue'</tspan><tspan fill="#d4d4d4">], ax=axes[</tspan><tspan fill="#b5cea8">0</tspan><tspan fill="#d4d4d4">], kde=</tspan><tspan fill="#569cd6">True</tspan><tspan fill="#d4d4d4">)</tspan></text>
+    <text x="65" y="225" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">sns.</tspan><tspan fill="#dcdcaa">heatmap</tspan><tspan fill="#d4d4d4">(corr, ax=axes[</tspan><tspan fill="#b5cea8">1</tspan><tspan fill="#d4d4d4">], annot=</tspan><tspan fill="#569cd6">True</tspan><tspan fill="#d4d4d4">)</tspan></text>
+    <text x="65" y="247" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">sns.</tspan><tspan fill="#dcdcaa">boxplot</tspan><tspan fill="#d4d4d4">(x=</tspan><tspan fill="#ce9178">'region'</tspan><tspan fill="#d4d4d4">, y=</tspan><tspan fill="#ce9178">'revenue'</tspan><tspan fill="#d4d4d4">, data=df, ax=axes[</tspan><tspan fill="#b5cea8">2</tspan><tspan fill="#d4d4d4">])</tspan></text>
+    <text x="65" y="269" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">plt.</tspan><tspan fill="#dcdcaa">savefig</tspan><tspan fill="#d4d4d4">(</tspan><tspan fill="#ce9178">'dashboard.png'</tspan><tspan fill="#d4d4d4">, dpi=</tspan><tspan fill="#b5cea8">300</tspan><tspan fill="#d4d4d4">)</tspan></text>
+    <!-- Preview chart -->
+    <text x="65" y="305" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#858585">Revenue by Region (Preview)</text>
+    <rect x="70"  y="390" width="50" height="60"  fill="#569cd6" opacity="0.9"/>
+    <rect x="130" y="370" width="50" height="80"  fill="#4ec9b0" opacity="0.9"/>
+    <rect x="190" y="380" width="50" height="70"  fill="#dcdcaa" opacity="0.9"/>
+    <rect x="250" y="355" width="50" height="95"  fill="#ce9178" opacity="0.9"/>
+    <rect x="310" y="400" width="50" height="50"  fill="#6a9955" opacity="0.9"/>
+    <text x="95"  y="462" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#858585">North</text>
+    <text x="155" y="462" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#858585">South</text>
+    <text x="215" y="462" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#858585">East</text>
+    <text x="275" y="462" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#858585">West</text>
+    <text x="335" y="462" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#858585">Central</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.616;0.617;0.693;0.694;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Panel 10: Python Machine Learning -->
-  <g id="panel10" opacity="0.1">
-    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
-
-    <text x="35" y="120" class="line-num">1</text>
-    <text x="35" y="145" class="line-num">2</text>
-    <text x="35" y="170" class="line-num">3</text>
-    <text x="35" y="195" class="line-num">4</text>
-    <text x="35" y="220" class="line-num">5</text>
-    <text x="35" y="245" class="line-num">6</text>
-    <text x="35" y="270" class="line-num">7</text>
-    <text x="35" y="295" class="line-num">8</text>
-
-    <text x="60" y="120" class="code-text"><tspan class="keyword">import</tspan> xgboost <tspan class="keyword">as</tspan> xgb</text>
-    <text x="60" y="145" class="code-text"><tspan class="keyword">from</tspan> sklearn.metrics <tspan class="keyword">import</tspan> roc_auc_score</text>
-    <text x="60" y="170" class="code-text"></text>
-    <text x="60" y="195" class="code-text">model <tspan class="operator">=</tspan> xgb.<tspan class="function">XGBClassifier</tspan>(learning_rate<tspan class="operator">=</tspan><tspan class="number">0.05</tspan>)</text>
-    <text x="60" y="220" class="code-text">model.<tspan class="function">fit</tspan>(X_train, y_train, verbose<tspan class="operator">=</tspan><tspan class="number">10</tspan>)</text>
-    <text x="60" y="245" class="code-text">pred <tspan class="operator">=</tspan> model.<tspan class="function">predict_proba</tspan>(X_test)</text>
-    <text x="60" y="270" class="code-text">roc_auc <tspan class="operator">=</tspan> <tspan class="function">roc_auc_score</tspan>(y_test, pred)</text>
-    <text x="60" y="295" class="code-text"><tspan class="keyword">print</tspan>(<tspan class="string">f'AUC: {roc_auc:.4f}'</tspan>)</text>
-
-    <text x="60" y="330" class="code-text" fill="#a0a0a0">AUC: <tspan class="number">0.9821</tspan></text>
-    <text x="60" y="350" class="code-text" fill="#a0a0a0">Feature Importance:</text>
-    <text x="60" y="370" class="code-text" fill="#6a9955">age: 0.312 | income: 0.278</text>
-    <text x="60" y="390" class="code-text" fill="#6a9955">score: 0.198 | region: 0.212</text>
-
-    <animate attributeName="opacity"
-      values="0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;1;1"
-      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.567;0.642;0.717;0.792;0.867;1"
-      dur="30s" repeatCount="indefinite"/>
+  <!-- ════════════════════════════════════════
+       PANEL 10 — XGBoost
+       ════════════════════════════════════════ -->
+  <g opacity="0">
+    <rect x="0" y="75" width="900" height="405" fill="#1e1e1e"/>
+    <text x="44" y="115" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">1</text>
+    <text x="44" y="137" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">2</text>
+    <text x="44" y="159" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">3</text>
+    <text x="44" y="181" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">4</text>
+    <text x="44" y="203" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">5</text>
+    <text x="44" y="225" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">6</text>
+    <text x="44" y="247" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">7</text>
+    <text x="44" y="269" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">8</text>
+    <text x="44" y="291" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">9</text>
+    <text x="44" y="313" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">10</text>
+    <text x="65" y="115" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">import</tspan><tspan fill="#d4d4d4"> xgboost </tspan><tspan fill="#569cd6">as</tspan><tspan fill="#d4d4d4"> xgb</tspan></text>
+    <text x="65" y="137" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">from</tspan><tspan fill="#d4d4d4"> sklearn.metrics </tspan><tspan fill="#569cd6">import</tspan><tspan fill="#d4d4d4"> roc_auc_score</tspan></text>
+    <text x="65" y="159" font-family="Courier New,monospace" font-size="13" fill="#d4d4d4"> </text>
+    <text x="65" y="181" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">model = xgb.</tspan><tspan fill="#dcdcaa">XGBClassifier</tspan><tspan fill="#d4d4d4">(</tspan></text>
+    <text x="65" y="203" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">  learning_rate=</tspan><tspan fill="#b5cea8">0.05</tspan><tspan fill="#d4d4d4">, n_estimators=</tspan><tspan fill="#b5cea8">200</tspan><tspan fill="#d4d4d4">,</tspan></text>
+    <text x="65" y="225" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">  max_depth=</tspan><tspan fill="#b5cea8">6</tspan><tspan fill="#d4d4d4">, subsample=</tspan><tspan fill="#b5cea8">0.8</tspan><tspan fill="#d4d4d4">, use_label_encoder=</tspan><tspan fill="#569cd6">False</tspan></text>
+    <text x="65" y="247" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">)</tspan></text>
+    <text x="65" y="269" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">model.</tspan><tspan fill="#dcdcaa">fit</tspan><tspan fill="#d4d4d4">(X_train, y_train, eval_set=[(X_test, y_test)])</tspan></text>
+    <text x="65" y="291" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">proba = model.</tspan><tspan fill="#dcdcaa">predict_proba</tspan><tspan fill="#d4d4d4">(X_test)[:,</tspan><tspan fill="#b5cea8">1</tspan><tspan fill="#d4d4d4">]</tspan></text>
+    <text x="65" y="313" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># AUC-ROC: 0.9821  |  AP: 0.974</text>
+    <text x="65" y="335" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># Feature importance:</text>
+    <text x="65" y="357" font-family="Courier New,monospace" font-size="13" fill="#6a9955">#   age: 0.312  |  income: 0.278</text>
+    <text x="65" y="379" font-family="Courier New,monospace" font-size="13" fill="#6a9955">#   score: 0.199  |  region: 0.211</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.693;0.694;0.770;0.771;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Panel 11: Database Optimization -->
-  <g id="panel11" opacity="0.1">
-    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
-
-    <text x="35" y="120" class="line-num">1</text>
-    <text x="35" y="145" class="line-num">2</text>
-    <text x="35" y="170" class="line-num">3</text>
-    <text x="35" y="195" class="line-num">4</text>
-    <text x="35" y="220" class="line-num">5</text>
-    <text x="35" y="245" class="line-num">6</text>
-    <text x="35" y="270" class="line-num">7</text>
-
-    <text x="60" y="120" class="code-text"><tspan class="keyword">EXPLAIN ANALYZE</tspan></text>
-    <text x="60" y="145" class="code-text"><tspan class="keyword">SELECT</tspan> o.order_id, c.customer_id</text>
-    <text x="60" y="170" class="code-text"><tspan class="keyword">FROM</tspan> orders o</text>
-    <text x="60" y="195" class="code-text"><tspan class="keyword">JOIN</tspan> customers c <tspan class="keyword">ON</tspan> o.cust_id <tspan class="operator">=</tspan> c.id</text>
-    <text x="60" y="220" class="code-text"><tspan class="keyword">WHERE</tspan> o.amount <tspan class="operator">&gt;</tspan> <tspan class="number">1000</tspan></text>
-    <text x="60" y="245" class="code-text"><tspan class="keyword">ORDER BY</tspan> o.created_at <tspan class="keyword">DESC</tspan>;</text>
-
-    <text x="60" y="285" class="code-text" fill="#a0a0a0">Query Plan:</text>
-    <text x="60" y="305" class="code-text" fill="#6a9955">✓ Seq Scan: 234ms</text>
-    <text x="60" y="325" class="code-text" fill="#6a9955">✓ Hash Join: 45ms</text>
-    <text x="60" y="345" class="code-text" fill="#6a9955">✓ Index Scan: 12ms</text>
-    <text x="60" y="365" class="code-text" fill="#4ec9b0">Total: 291ms (optimized)</text>
-    <text x="60" y="385" class="code-text" fill="#6a9955">↓ 42% improvement</text>
-
-    <animate attributeName="opacity"
-      values="0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;1"
-      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.567;0.642;0.717;0.792;0.867;1"
-      dur="30s" repeatCount="indefinite"/>
+  <!-- ════════════════════════════════════════
+       PANEL 11 — Query Optimization
+       ════════════════════════════════════════ -->
+  <g opacity="0">
+    <rect x="0" y="75" width="900" height="405" fill="#1e1e1e"/>
+    <text x="44" y="115" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">1</text>
+    <text x="44" y="137" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">2</text>
+    <text x="44" y="159" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">3</text>
+    <text x="44" y="181" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">4</text>
+    <text x="44" y="203" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">5</text>
+    <text x="44" y="225" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">6</text>
+    <text x="44" y="247" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">7</text>
+    <text x="44" y="269" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">8</text>
+    <text x="44" y="291" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">9</text>
+    <text x="44" y="313" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">10</text>
+    <text x="44" y="335" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">11</text>
+    <text x="65" y="115" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">EXPLAIN ANALYZE</tspan></text>
+    <text x="65" y="137" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">SELECT</tspan><tspan fill="#d4d4d4"> o.order_id, c.name, o.amount</tspan></text>
+    <text x="65" y="159" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">FROM</tspan><tspan fill="#d4d4d4"> orders o</tspan></text>
+    <text x="65" y="181" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">JOIN</tspan><tspan fill="#d4d4d4"> customers c </tspan><tspan fill="#569cd6">ON</tspan><tspan fill="#d4d4d4"> o.customer_id = c.id</tspan></text>
+    <text x="65" y="203" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">WHERE</tspan><tspan fill="#d4d4d4"> o.amount &gt; </tspan><tspan fill="#b5cea8">1000</tspan></text>
+    <text x="65" y="225" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">ORDER BY</tspan><tspan fill="#d4d4d4"> o.created_at </tspan><tspan fill="#569cd6">DESC LIMIT</tspan><tspan fill="#d4d4d4"> </tspan><tspan fill="#b5cea8">100</tspan><tspan fill="#d4d4d4">;</tspan></text>
+    <text x="65" y="247" font-family="Courier New,monospace" font-size="13" fill="#d4d4d4"> </text>
+    <text x="65" y="269" font-family="Courier New,monospace" font-size="13" fill="#6a9955">-- Query Plan:</text>
+    <text x="65" y="291" font-family="Courier New,monospace" font-size="13" fill="#6a9955">--   Index Scan on orders  (cost=0.42..12.3)</text>
+    <text x="65" y="313" font-family="Courier New,monospace" font-size="13" fill="#6a9955">--   Hash Join            (cost=1.2..34.5)</text>
+    <text x="65" y="335" font-family="Courier New,monospace" font-size="13" fill="#4ec9b0">--   Execution: 12.3ms  (was: 234ms before index)</text>
+    <text x="65" y="357" font-family="Courier New,monospace" font-size="13" fill="#4ec9b0">--   Performance gain: 95% improvement</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.770;0.771;0.847;0.848;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Panel 12: Data Presentation -->
-  <g id="panel12" opacity="0.1">
-    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
+  <!-- ════════════════════════════════════════
+       PANEL 12 — Executive Summary
+       ════════════════════════════════════════ -->
+  <g opacity="0">
+    <rect x="0" y="75" width="900" height="405" fill="#1e1e1e"/>
+    <text x="450" y="115" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="bold" fill="#4ec9b0">Q1 2024 — Executive Summary</text>
+    <text x="450" y="138" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#858585">Data Analytics &amp; Business Intelligence Report</text>
+    <!-- Left card -->
+    <rect x="60" y="155" width="365" height="145" fill="#1a2a3a" stroke="#264f78" stroke-width="1" rx="5"/>
+    <text x="242" y="178" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#569cd6">KEY FINDINGS</text>
+    <text x="80"  y="202" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">&#x2022; Revenue grew 24.5% YoY &#x2192; $2.4M</text>
+    <text x="80"  y="224" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">&#x2022; Customer acquisition +18.2% (4,231)</text>
+    <text x="80"  y="246" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">&#x2022; Churn reduced: 5.1% &#x2192; 3.2%</text>
+    <text x="80"  y="268" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">&#x2022; ML model AUC: 0.9821 (+12% vs v1)</text>
+    <text x="80"  y="290" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">&#x2022; ETL pipeline: 0 errors, avg 18min run</text>
+    <!-- Right card -->
+    <rect x="450" y="155" width="390" height="145" fill="#1a3a1a" stroke="#3d5a3d" stroke-width="1" rx="5"/>
+    <text x="645" y="178" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#6a9955">RECOMMENDATIONS</text>
+    <text x="468" y="202" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">1. Scale LATAM expansion (+42%)</text>
+    <text x="468" y="224" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">2. Invest in real-time dashboards</text>
+    <text x="468" y="246" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">3. Deploy XGBoost model to prod</text>
+    <text x="468" y="268" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">4. Optimize top 5 slow queries</text>
+    <text x="468" y="290" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#d4d4d4">5. Automate Q2 reporting pipeline</text>
+    <!-- Next steps bar -->
+    <rect x="60" y="318" width="780" height="55" fill="#252526" stroke="#3e3e42" stroke-width="1" rx="5"/>
+    <text x="450" y="342" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="bold" fill="#ce9178">NEXT STEPS</text>
+    <text x="450" y="362" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#d4d4d4">Q2 kickoff meeting  |  Follow-up in 2 weeks  |  Annual target: $12M</text>
+    <!-- Footer tags -->
+    <text x="450" y="418" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#6a9955">&#x2713; All Q1 targets exceeded  |  Data pipeline: 99.8% uptime  |  Models retrained monthly</text>
+    <text x="450" y="440" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#569cd6">SQL &#x2022; Python &#x2022; Power BI &#x2022; Machine Learning &#x2022; ETL &#x2022; Statistics &#x2022; Data Engineering</text>
+    <text x="450" y="460" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#858585">Data Analyst &amp; Data Engineer  |  Analytics Studio v2.0</text>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.847;0.848;0.924;0.925;1" dur="30s" repeatCount="indefinite"/>
+  </g>
 
-    <text x="60" y="130" class="code-text" fill="#ffffff" font-weight="bold">📉 Executive Summary</text>
-
-    <!-- Report sections -->
-    <text x="60" y="165" class="code-text" fill="#569cd6" font-weight="bold">KEY INSIGHTS</text>
-    <text x="60" y="190" class="code-text" fill="#a0a0a0" font-size="11">• Revenue increased 24.5% YoY</text>
-    <text x="60" y="210" class="code-text" fill="#a0a0a0" font-size="11">• Customer acquisition up 18.2%</text>
-    <text x="60" y="230" class="code-text" fill="#a0a0a0" font-size="11">• Churn rate reduced to 3.2%</text>
-
-    <text x="60" y="265" class="code-text" fill="#ce9178" font-weight="bold">RECOMMENDATIONS</text>
-    <text x="60" y="290" class="code-text" fill="#a0a0a0" font-size="11">1. Invest in market expansion</text>
-    <text x="60" y="310" class="code-text" fill="#a0a0a0" font-size="11">2. Enhance product features</text>
-    <text x="60" y="330" class="code-text" fill="#a0a0a0" font-size="11">3. Optimize pricing strategy</text>
-
-    <text x="60" y="365" class="code-text" fill="#6a9955" font-weight="bold">NEXT STEPS</text>
-    <text x="60" y="390" class="code-text" fill="#a0a0a0" font-size="11">Follow-up analysis in 2 weeks</text>
-
-    <animate attributeName="opacity"
-      values="0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;1"
-      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.567;0.642;0.717;0.792;0.867;1"
-      dur="30s" repeatCount="indefinite"/>
+  <!-- ════════════════════════════════════════
+       PANEL 13 — Supabase Backend
+       ════════════════════════════════════════ -->
+  <g opacity="0">
+    <rect x="0" y="75" width="900" height="405" fill="#1e1e1e"/>
+    <text x="44" y="115" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">1</text>
+    <text x="44" y="137" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">2</text>
+    <text x="44" y="159" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">3</text>
+    <text x="44" y="181" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">4</text>
+    <text x="44" y="203" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">5</text>
+    <text x="44" y="225" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">6</text>
+    <text x="44" y="247" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">7</text>
+    <text x="44" y="269" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">8</text>
+    <text x="44" y="291" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">9</text>
+    <text x="44" y="313" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">10</text>
+    <text x="44" y="335" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">11</text>
+    <text x="44" y="357" text-anchor="end" font-family="Courier New,monospace" font-size="13" fill="#858585">12</text>
+    <text x="65" y="115" font-family="Courier New,monospace" font-size="13"><tspan fill="#569cd6">import</tspan><tspan fill="#d4d4d4"> </tspan><tspan fill="#d4d4d4">{</tspan><tspan fill="#d4d4d4"> createClient </tspan><tspan fill="#d4d4d4">}</tspan><tspan fill="#d4d4d4"> </tspan><tspan fill="#569cd6">from</tspan><tspan fill="#d4d4d4"> </tspan><tspan fill="#ce9178">'@supabase/supabase-js'</tspan></text>
+    <text x="65" y="137" font-family="Courier New,monospace" font-size="13" fill="#d4d4d4"> </text>
+    <text x="65" y="159" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">const supabase = </tspan><tspan fill="#dcdcaa">createClient</tspan><tspan fill="#d4d4d4">(</tspan></text>
+    <text x="65" y="181" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">  </tspan><tspan fill="#ce9178">'https://xyz.supabase.co'</tspan><tspan fill="#d4d4d4">,</tspan></text>
+    <text x="65" y="203" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">  </tspan><tspan fill="#ce9178">'public-anon-key'</tspan></text>
+    <text x="65" y="225" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">)</tspan></text>
+    <text x="65" y="247" font-family="Courier New,monospace" font-size="13" fill="#d4d4d4"> </text>
+    <text x="65" y="269" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">const </tspan><tspan fill="#d4d4d4">{</tspan><tspan fill="#d4d4d4"> data, error </tspan><tspan fill="#d4d4d4">}</tspan><tspan fill="#d4d4d4"> = </tspan><tspan fill="#569cd6">await</tspan></text>
+    <text x="65" y="291" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">  supabase.</tspan><tspan fill="#dcdcaa">from</tspan><tspan fill="#d4d4d4">(</tspan><tspan fill="#ce9178">'users'</tspan><tspan fill="#d4d4d4">)</tspan></text>
+    <text x="65" y="313" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">    .</tspan><tspan fill="#dcdcaa">select</tspan><tspan fill="#d4d4d4">(</tspan><tspan fill="#ce9178">'*'</tspan><tspan fill="#d4d4d4">)</tspan></text>
+    <text x="65" y="335" font-family="Courier New,monospace" font-size="13"><tspan fill="#d4d4d4">    .</tspan><tspan fill="#dcdcaa">eq</tspan><tspan fill="#d4d4d4">(</tspan><tspan fill="#ce9178">'auth_id'</tspan><tspan fill="#d4d4d4">, user.id)</tspan></text>
+    <text x="65" y="357" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># Real-time subscriptions, Row Level Security, PostgreSQL ✓</text>
+    <text x="65" y="379" font-family="Courier New,monospace" font-size="13" fill="#6a9955"># Edge Functions, Vectors (pgvector), Storage, Auth ✓</text>
+    <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.924;0.925;1" dur="30s" repeatCount="indefinite"/>
   </g>
 
 </svg>
