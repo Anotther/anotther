@@ -1,0 +1,497 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .vs-code-bg { fill: #1e1e1e; }
+      .header-bg { fill: #252526; }
+      .tab-active { fill: #1e1e1e; stroke: none; }
+      .tab-inactive { fill: #2d2d30; stroke: none; }
+      .tab-text { font-family: 'Segoe UI', sans-serif; font-size: 13px; fill: #a0a0a0; }
+      .tab-text-active { fill: #ffffff; }
+      .code-text { font-family: 'Courier New', monospace; font-size: 12px; }
+      .keyword { fill: #569cd6; }
+      .string { fill: #ce9178; }
+      .comment { fill: #6a9955; }
+      .number { fill: #b5cea8; }
+      .function { fill: #dcdcaa; }
+      .operator { fill: #d4d4d4; }
+      .line-num { fill: #858585; font-family: 'Courier New', monospace; font-size: 11px; }
+      .toolbar-bg { fill: #333333; }
+    </style>
+  </defs>
+
+  <!-- Main background -->
+  <rect width="900" height="500" class="vs-code-bg"/>
+
+  <!-- VS Code Header -->
+  <rect width="900" height="35" class="header-bg"/>
+
+  <!-- Tab bar background -->
+  <rect y="35" width="900" height="40" fill="#2d2d30"/>
+
+  <!-- Tabs -->
+  <g id="tabs">
+    <rect x="10" y="40" width="120" height="30" class="tab-active" rx="3"/>
+    <text x="20" y="60" class="tab-text tab-text-active">query.sql</text>
+
+    <rect x="135" y="40" width="130" height="30" class="tab-inactive" rx="3"/>
+    <text x="145" y="60" class="tab-text">analysis.py</text>
+
+    <rect x="270" y="40" width="130" height="30" class="tab-inactive" rx="3"/>
+    <text x="280" y="60" class="tab-text">dashboard.bi</text>
+
+    <rect x="405" y="40" width="120" height="30" class="tab-inactive" rx="3"/>
+    <text x="415" y="60" class="tab-text">model.py</text>
+  </g>
+
+  <!-- Panel 1: SQL Query -->
+  <g id="panel1">
+    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
+
+    <!-- Line numbers -->
+    <text x="35" y="120" class="line-num">1</text>
+    <text x="35" y="145" class="line-num">2</text>
+    <text x="35" y="170" class="line-num">3</text>
+    <text x="35" y="195" class="line-num">4</text>
+    <text x="35" y="220" class="line-num">5</text>
+    <text x="35" y="245" class="line-num">6</text>
+    <text x="35" y="270" class="line-num">7</text>
+    <text x="35" y="295" class="line-num">8</text>
+
+    <!-- SQL Code -->
+    <text x="60" y="120" class="code-text"><tspan class="keyword">SELECT</tspan> customer_id, <tspan class="function">SUM</tspan>(amount)</text>
+    <text x="60" y="145" class="code-text"><tspan class="keyword">FROM</tspan> orders</text>
+    <text x="60" y="170" class="code-text"><tspan class="keyword">WHERE</tspan> date <tspan class="operator">&gt;=</tspan> <tspan class="string">'2024-01-01'</tspan></text>
+    <text x="60" y="195" class="code-text"><tspan class="keyword">GROUP BY</tspan> customer_id</text>
+    <text x="60" y="220" class="code-text"><tspan class="keyword">HAVING</tspan> <tspan class="function">SUM</tspan>(amount) <tspan class="operator">&gt;</tspan> <tspan class="number">1000</tspan></text>
+    <text x="60" y="245" class="code-text"><tspan class="keyword">ORDER BY</tspan> <tspan class="number">2</tspan> <tspan class="keyword">DESC</tspan>;</text>
+
+    <!-- Results table -->
+    <text x="60" y="285" class="code-text" fill="#a0a0a0">Results:</text>
+    <text x="60" y="310" class="code-text"><tspan class="number">customer_id</tspan> <tspan fill="#858585">|</tspan> <tspan class="number">total</tspan></text>
+    <text x="60" y="330" class="code-text"><tspan class="number">12451</tspan> <tspan fill="#858585">|</tspan> <tspan class="number">$5,234</tspan></text>
+    <text x="60" y="350" class="code-text"><tspan class="number">12789</tspan> <tspan fill="#858585">|</tspan> <tspan class="number">$3,891</tspan></text>
+
+    <text x="60" y="380" class="code-text" fill="#a0a0a0"><tspan class="comment">-- Query executed: 245ms</tspan></text>
+
+    <opacity_animate1>
+      <animate attributeName="opacity"
+        values="1;1;1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1"
+        keyTimes="0;0.08;0.25;0.267;0.333;0.4;0.467;0.533;0.6;0.667;0.733;1"
+        dur="30s" repeatCount="indefinite"/>
+    </opacity_animate1>
+  </g>
+
+  <!-- Panel 2: Python Data Analysis -->
+  <g id="panel2" opacity="0.1">
+    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
+
+    <text x="35" y="120" class="line-num">1</text>
+    <text x="35" y="145" class="line-num">2</text>
+    <text x="35" y="170" class="line-num">3</text>
+    <text x="35" y="195" class="line-num">4</text>
+    <text x="35" y="220" class="line-num">5</text>
+    <text x="35" y="245" class="line-num">6</text>
+    <text x="35" y="270" class="line-num">7</text>
+    <text x="35" y="295" class="line-num">8</text>
+    <text x="35" y="320" class="line-num">9</text>
+
+    <text x="60" y="120" class="code-text"><tspan class="keyword">import</tspan> pandas <tspan class="keyword">as</tspan> pd</text>
+    <text x="60" y="145" class="code-text"><tspan class="keyword">import</tspan> numpy <tspan class="keyword">as</tspan> np</text>
+    <text x="60" y="170" class="code-text"><tspan class="keyword">import</tspan> matplotlib.pyplot <tspan class="keyword">as</tspan> plt</text>
+    <text x="60" y="195" class="code-text"></text>
+    <text x="60" y="220" class="code-text">df <tspan class="operator">=</tspan> pd.<tspan class="function">read_csv</tspan>(<tspan class="string">'data.csv'</tspan>)</text>
+    <text x="60" y="245" class="code-text">summary <tspan class="operator">=</tspan> df.<tspan class="function">describe</tspan>()</text>
+    <text x="60" y="270" class="code-text">correlation <tspan class="operator">=</tspan> df.<tspan class="function">corr</tspan>()</text>
+    <text x="60" y="295" class="code-text">df.<tspan class="function">plot</tspan>(figsize<tspan class="operator">=</tspan>(<tspan class="number">12</tspan>, <tspan class="number">6</tspan>))</text>
+    <text x="60" y="320" class="code-text">plt.<tspan class="function">show</tspan>()</text>
+
+    <text x="60" y="350" class="code-text" fill="#a0a0a0">Mean: <tspan class="number">2345.67</tspan></text>
+    <text x="60" y="370" class="code-text" fill="#a0a0a0">Std Dev: <tspan class="number">456.89</tspan></text>
+    <text x="60" y="390" class="code-text" fill="#a0a0a0">Correlation: <tspan class="number">0.85</tspan></text>
+
+    <animate attributeName="opacity"
+      values="0.1;0.1;1;1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1"
+      keyTimes="0;0.08;0.25;0.342;0.367;0.433;0.5;0.567;0.633;0.7;0.767;1"
+      dur="30s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Panel 3: Power BI Dashboard -->
+  <g id="panel3" opacity="0.1">
+    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
+
+    <text x="60" y="130" class="code-text" fill="#ffffff" font-weight="bold">📊 Business Dashboard</text>
+
+    <!-- KPI Cards -->
+    <rect x="50" y="160" width="180" height="80" fill="#264f78" stroke="#3d6ba3" stroke-width="1" rx="4"/>
+    <text x="70" y="180" class="code-text" fill="#a0a0a0">Total Revenue</text>
+    <text x="70" y="210" class="code-text" fill="#4ec9b0" font-size="20">$2.4M</text>
+    <text x="70" y="230" class="code-text" fill="#6a9955" font-size="11">↑ 12.5%</text>
+
+    <rect x="250" y="160" width="180" height="80" fill="#6f3e2d" stroke="#a05a3d" stroke-width="1" rx="4"/>
+    <text x="270" y="180" class="code-text" fill="#a0a0a0">Active Users</text>
+    <text x="270" y="210" class="code-text" fill="#4ec9b0" font-size="20">12.5K</text>
+    <text x="270" y="230" class="code-text" fill="#6a9955" font-size="11">↑ 8.3%</text>
+
+    <rect x="450" y="160" width="180" height="80" fill="#3d5a3d" stroke="#5a8a5a" stroke-width="1" rx="4"/>
+    <text x="470" y="180" class="code-text" fill="#a0a0a0">Conversion Rate</text>
+    <text x="470" y="210" class="code-text" fill="#4ec9b0" font-size="20">3.8%</text>
+    <text x="470" y="230" class="code-text" fill="#6a9955" font-size="11">↑ 2.1%</text>
+
+    <rect x="650" y="160" width="180" height="80" fill="#4a3d6f" stroke="#6a5d9f" stroke-width="1" rx="4"/>
+    <text x="670" y="180" class="code-text" fill="#a0a0a0">Avg Order Value</text>
+    <text x="670" y="210" class="code-text" fill="#4ec9b0" font-size="20">$187.50</text>
+    <text x="670" y="230" class="code-text" fill="#6a9955" font-size="11">↑ 5.2%</text>
+
+    <!-- Chart bars -->
+    <text x="60" y="290" class="code-text" fill="#a0a0a0">Monthly Trend</text>
+    <rect x="60" y="310" width="30" height="20" fill="#569cd6" opacity="0.6"/>
+    <rect x="100" y="310" width="35" height="30" fill="#569cd6" opacity="0.7"/>
+    <rect x="145" y="310" width="40" height="40" fill="#569cd6" opacity="0.8"/>
+    <rect x="195" y="310" width="38" height="35" fill="#569cd6" opacity="0.75"/>
+    <rect x="240" y="310" width="42" height="45" fill="#569cd6" opacity="0.85"/>
+    <rect x="290" y="310" width="35" height="38" fill="#569cd6" opacity="0.78"/>
+
+    <animate attributeName="opacity"
+      values="0.1;0.1;0.1;1;1;0.1;0.1;0.1;0.1;0.1;0.1;0.1"
+      keyTimes="0;0.08;0.25;0.342;0.417;0.442;0.508;0.575;0.642;0.708;0.775;1"
+      dur="30s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Panel 4: Machine Learning Model -->
+  <g id="panel4" opacity="0.1">
+    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
+
+    <text x="35" y="120" class="line-num">1</text>
+    <text x="35" y="145" class="line-num">2</text>
+    <text x="35" y="170" class="line-num">3</text>
+    <text x="35" y="195" class="line-num">4</text>
+    <text x="35" y="220" class="line-num">5</text>
+    <text x="35" y="245" class="line-num">6</text>
+    <text x="35" y="270" class="line-num">7</text>
+    <text x="35" y="295" class="line-num">8</text>
+
+    <text x="60" y="120" class="code-text"><tspan class="keyword">from</tspan> sklearn <tspan class="keyword">import</tspan> ensemble</text>
+    <text x="60" y="145" class="code-text"><tspan class="keyword">from</tspan> sklearn.model_selection <tspan class="keyword">import</tspan> train_test_split</text>
+    <text x="60" y="170" class="code-text"></text>
+    <text x="60" y="195" class="code-text">X_train, X_test, y_train, y_test <tspan class="operator">=</tspan></text>
+    <text x="80" y="220" class="code-text">train_test_split(X, y, test_size<tspan class="operator">=</tspan><tspan class="number">0.2</tspan>)</text>
+    <text x="60" y="245" class="code-text">model <tspan class="operator">=</tspan> ensemble.<tspan class="function">RandomForestClassifier</tspan>(n_estimators<tspan class="operator">=</tspan><tspan class="number">100</tspan>)</text>
+    <text x="60" y="270" class="code-text">model.<tspan class="function">fit</tspan>(X_train, y_train)</text>
+    <text x="60" y="295" class="code-text">accuracy <tspan class="operator">=</tspan> model.<tspan class="function">score</tspan>(X_test, y_test)</text>
+
+    <text x="60" y="330" class="code-text" fill="#a0a0a0">Model Accuracy: <tspan class="number">94.2%</tspan></text>
+    <text x="60" y="350" class="code-text" fill="#a0a0a0">Precision: <tspan class="number">0.951</tspan></text>
+    <text x="60" y="370" class="code-text" fill="#a0a0a0">Recall: <tspan class="number">0.938</tspan></text>
+    <text x="60" y="390" class="code-text" fill="#a0a0a0">F1-Score: <tspan class="number">0.944</tspan></text>
+
+    <animate attributeName="opacity"
+      values="0.1;0.1;0.1;0.1;1;1;0.1;0.1;0.1;0.1;0.1;0.1"
+      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.517;0.583;0.65;0.717;0.783;1"
+      dur="30s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Panel 5: Data Warehouse Schema -->
+  <g id="panel5" opacity="0.1">
+    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
+
+    <text x="35" y="120" class="line-num">1</text>
+    <text x="35" y="145" class="line-num">2</text>
+    <text x="35" y="170" class="line-num">3</text>
+    <text x="35" y="195" class="line-num">4</text>
+    <text x="35" y="220" class="line-num">5</text>
+    <text x="35" y="245" class="line-num">6</text>
+    <text x="35" y="270" class="line-num">7</text>
+
+    <text x="60" y="120" class="code-text"><tspan class="keyword">CREATE TABLE</tspan> dim_customers (</text>
+    <text x="80" y="145" class="code-text">customer_id <tspan class="keyword">INT PRIMARY KEY</tspan>,</text>
+    <text x="80" y="170" class="code-text">name <tspan class="keyword">VARCHAR</tspan>(<tspan class="number">255</tspan>),</text>
+    <text x="80" y="195" class="code-text">email <tspan class="keyword">VARCHAR</tspan>(<tspan class="number">255</tspan>) <tspan class="keyword">UNIQUE</tspan>,</text>
+    <text x="80" y="220" class="code-text">created_date <tspan class="keyword">DATE</tspan></text>
+    <text x="60" y="245" class="code-text">);</text>
+    <text x="60" y="270" class="code-text"><tspan class="keyword">CREATE INDEX</tspan> idx_email <tspan class="keyword">ON</tspan> dim_customers(email);</text>
+
+    <text x="60" y="310" class="code-text" fill="#a0a0a0">Schema Status:</text>
+    <text x="60" y="330" class="code-text" fill="#6a9955">✓ Tables: 24</text>
+    <text x="60" y="350" class="code-text" fill="#6a9955">✓ Indexes: 67</text>
+    <text x="60" y="370" class="code-text" fill="#6a9955">✓ Relationships: 42</text>
+    <text x="60" y="390" class="code-text" fill="#6a9955">✓ Total Size: 4.2GB</text>
+
+    <animate attributeName="opacity"
+      values="0.1;0.1;0.1;0.1;0.1;1;1;0.1;0.1;0.1;0.1;0.1"
+      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.567;0.592;0.658;0.725;0.792;1"
+      dur="30s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Panel 6: Statistical Analysis -->
+  <g id="panel6" opacity="0.1">
+    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
+
+    <text x="35" y="120" class="line-num">1</text>
+    <text x="35" y="145" class="line-num">2</text>
+    <text x="35" y="170" class="line-num">3</text>
+    <text x="35" y="195" class="line-num">4</text>
+    <text x="35" y="220" class="line-num">5</text>
+    <text x="35" y="245" class="line-num">6</text>
+    <text x="35" y="270" class="line-num">7</text>
+
+    <text x="60" y="120" class="code-text"><tspan class="keyword">from</tspan> scipy <tspan class="keyword">import</tspan> stats</text>
+    <text x="60" y="145" class="code-text"></text>
+    <text x="60" y="170" class="code-text">mean <tspan class="operator">=</tspan> np.<tspan class="function">mean</tspan>(data)</text>
+    <text x="60" y="195" class="code-text">std_dev <tspan class="operator">=</tspan> np.<tspan class="function">std</tspan>(data)</text>
+    <text x="60" y="220" class="code-text">t_stat, p_value <tspan class="operator">=</tspan> stats.<tspan class="function">ttest_ind</tspan>(group1, group2)</text>
+    <text x="60" y="245" class="code-text">confidence_interval <tspan class="operator">=</tspan> stats.<tspan class="function">t.interval</tspan>(<tspan class="number">0.95</tspan>, df)</text>
+    <text x="60" y="270" class="code-text">correlation, pval <tspan class="operator">=</tspan> stats.<tspan class="function">pearsonr</tspan>(x, y)</text>
+
+    <text x="60" y="310" class="code-text" fill="#a0a0a0">Analysis Results:</text>
+    <text x="60" y="330" class="code-text" fill="#ce9178">Mean: <tspan class="number">2345.67</tspan> ± <tspan class="number">123.45</tspan></text>
+    <text x="60" y="350" class="code-text" fill="#ce9178">t-statistic: <tspan class="number">2.847</tspan> (p &lt; <tspan class="number">0.05</tspan>)</text>
+    <text x="60" y="370" class="code-text" fill="#ce9178">CI [<tspan class="number">2134.2</tspan>, <tspan class="number">2556.1</tspan>]</text>
+    <text x="60" y="390" class="code-text" fill="#ce9178">Pearson r: <tspan class="number">0.847</tspan> **</text>
+
+    <animate attributeName="opacity"
+      values="0.1;0.1;0.1;0.1;0.1;0.1;1;1;0.1;0.1;0.1;0.1"
+      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.567;0.642;0.667;0.733;0.8;1"
+      dur="30s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Panel 7: ETL Pipeline -->
+  <g id="panel7" opacity="0.1">
+    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
+
+    <text x="60" y="130" class="code-text" fill="#ffffff" font-weight="bold">⚙️ ETL Pipeline</text>
+
+    <!-- Pipeline stages -->
+    <rect x="50" y="160" width="100" height="60" fill="#264f78" stroke="#3d6ba3" stroke-width="2" rx="4"/>
+    <text x="70" y="175" class="code-text" fill="#4ec9b0" font-weight="bold">EXTRACT</text>
+    <text x="65" y="195" class="code-text" fill="#a0a0a0" font-size="10">Source DB</text>
+    <text x="65" y="210" class="code-text" fill="#a0a0a0" font-size="10">→ 2.3M rows</text>
+
+    <!-- Arrow -->
+    <line x1="160" y1="190" x2="195" y2="190" stroke="#569cd6" stroke-width="2"/>
+    <polygon points="195,190 185,185 185,195" fill="#569cd6"/>
+
+    <rect x="210" y="160" width="100" height="60" fill="#6f3e2d" stroke="#a05a3d" stroke-width="2" rx="4"/>
+    <text x="230" y="175" class="code-text" fill="#4ec9b0" font-weight="bold">TRANSFORM</text>
+    <text x="225" y="195" class="code-text" fill="#a0a0a0" font-size="10">Clean & Enrich</text>
+    <text x="225" y="210" class="code-text" fill="#a0a0a0" font-size="10">→ 2.1M rows</text>
+
+    <!-- Arrow -->
+    <line x1="320" y1="190" x2="355" y2="190" stroke="#569cd6" stroke-width="2"/>
+    <polygon points="355,190 345,185 345,195" fill="#569cd6"/>
+
+    <rect x="370" y="160" width="100" height="60" fill="#3d5a3d" stroke="#5a8a5a" stroke-width="2" rx="4"/>
+    <text x="390" y="175" class="code-text" fill="#4ec9b0" font-weight="bold">LOAD</text>
+    <text x="385" y="195" class="code-text" fill="#a0a0a0" font-size="10">Data Warehouse</text>
+    <text x="385" y="210" class="code-text" fill="#a0a0a0" font-size="10">→ Ready</text>
+
+    <!-- Progress bars -->
+    <text x="60" y="270" class="code-text" fill="#a0a0a0">Extraction Progress:</text>
+    <rect x="60" y="285" width="300" height="8" fill="#3e3e42" rx="2"/>
+    <rect x="60" y="285" width="270" height="8" fill="#569cd6" rx="2"/>
+    <text x="370" y="295" class="code-text" fill="#a0a0a0" font-size="11">90%</text>
+
+    <text x="60" y="320" class="code-text" fill="#a0a0a0">Transform Progress:</text>
+    <rect x="60" y="335" width="300" height="8" fill="#3e3e42" rx="2"/>
+    <rect x="60" y="335" width="210" height="8" fill="#dcdcaa" rx="2"/>
+    <text x="370" y="345" class="code-text" fill="#a0a0a0" font-size="11">70%</text>
+
+    <text x="60" y="370" class="code-text" fill="#a0a0a0">Load Progress:</text>
+    <rect x="60" y="385" width="300" height="8" fill="#3e3e42" rx="2"/>
+    <rect x="60" y="385" width="90" height="8" fill="#ce9178" rx="2"/>
+    <text x="370" y="395" class="code-text" fill="#a0a0a0" font-size="11">30%</text>
+
+    <animate attributeName="opacity"
+      values="0.1;0.1;0.1;0.1;0.1;0.1;0.1;1;1;0.1;0.1;0.1"
+      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.567;0.642;0.717;0.742;0.808;1"
+      dur="30s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Panel 8: Business Intelligence -->
+  <g id="panel8" opacity="0.1">
+    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
+
+    <text x="60" y="130" class="code-text" fill="#ffffff" font-weight="bold">📈 Business Analytics</text>
+
+    <!-- Metrics -->
+    <text x="60" y="160" class="code-text" fill="#a0a0a0">Q1 2024 Performance</text>
+
+    <rect x="60" y="180" width="200" height="50" fill="#2d2d30" stroke="#3e3e42" stroke-width="1" rx="3"/>
+    <text x="75" y="197" class="code-text" fill="#a0a0a0" font-size="11">Revenue Growth</text>
+    <text x="75" y="215" class="code-text" fill="#4ec9b0" font-size="18">+24.5%</text>
+    <text x="75" y="225" class="code-text" fill="#6a9955" font-size="10">vs Q1 2023</text>
+
+    <rect x="280" y="180" width="200" height="50" fill="#2d2d30" stroke="#3e3e42" stroke-width="1" rx="3"/>
+    <text x="295" y="197" class="code-text" fill="#a0a0a0" font-size="11">Customer Acquisition</text>
+    <text x="295" y="215" class="code-text" fill="#4ec9b0" font-size="18">+18.2%</text>
+    <text x="295" y="225" class="code-text" fill="#6a9955" font-size="10">New Customers</text>
+
+    <rect x="500" y="180" width="200" height="50" fill="#2d2d30" stroke="#3e3e42" stroke-width="1" rx="3"/>
+    <text x="515" y="197" class="code-text" fill="#a0a0a0" font-size="11">Market Share</text>
+    <text x="515" y="215" class="code-text" fill="#4ec9b0" font-size="18">$2.8B</text>
+    <text x="515" y="225" class="code-text" fill="#6a9955" font-size="10">Total TAM</text>
+
+    <!-- Pie chart representation -->
+    <text x="60" y="270" class="code-text" fill="#a0a0a0">Sales by Region</text>
+    <circle cx="130" cy="320" r="40" fill="#569cd6" opacity="0.8"/>
+    <circle cx="200" cy="320" r="35" fill="#ce9178" opacity="0.8"/>
+    <circle cx="260" cy="320" r="28" fill="#6a9955" opacity="0.8"/>
+    <circle cx="310" cy="320" r="25" fill="#dcdcaa" opacity="0.8"/>
+
+    <text x="60" y="375" class="code-text" fill="#a0a0a0" font-size="11">North: 35%</text>
+    <text x="200" y="375" class="code-text" fill="#a0a0a0" font-size="11">South: 28%</text>
+    <text x="340" y="375" class="code-text" fill="#a0a0a0" font-size="11">East: 22%</text>
+    <text x="480" y="375" class="code-text" fill="#a0a0a0" font-size="11">West: 15%</text>
+
+    <animate attributeName="opacity"
+      values="0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;1;1;0.1;0.1"
+      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.567;0.642;0.717;0.792;0.817;1"
+      dur="30s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Panel 9: Data Visualization -->
+  <g id="panel9" opacity="0.1">
+    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
+
+    <text x="60" y="130" class="code-text" fill="#ffffff" font-weight="bold">📊 Visualization Layer</text>
+
+    <!-- Stacked bar chart -->
+    <text x="60" y="160" class="code-text" fill="#a0a0a0">Monthly Sales Breakdown</text>
+
+    <rect x="60" y="175" width="25" height="30" fill="#569cd6"/>
+    <rect x="60" y="205" width="25" height="35" fill="#ce9178"/>
+    <rect x="60" y="240" width="25" height="20" fill="#6a9955"/>
+
+    <rect x="95" y="170" width="25" height="40" fill="#569cd6"/>
+    <rect x="95" y="210" width="25" height="30" fill="#ce9178"/>
+    <rect x="95" y="240" width="25" height="25" fill="#6a9955"/>
+
+    <rect x="130" y="160" width="25" height="50" fill="#569cd6"/>
+    <rect x="130" y="210" width="25" height="25" fill="#ce9178"/>
+    <rect x="130" y="235" width="25" height="30" fill="#6a9955"/>
+
+    <rect x="165" y="165" width="25" height="45" fill="#569cd6"/>
+    <rect x="165" y="210" width="25" height="28" fill="#ce9178"/>
+    <rect x="165" y="238" width="25" height="27" fill="#6a9955"/>
+
+    <rect x="200" y="180" width="25" height="30" fill="#569cd6"/>
+    <rect x="200" y="210" width="25" height="32" fill="#ce9178"/>
+    <rect x="200" y="242" width="25" height="23" fill="#6a9955"/>
+
+    <text x="60" y="290" class="code-text" fill="#a0a0a0" font-size="10">Jan</text>
+    <text x="95" y="290" class="code-text" fill="#a0a0a0" font-size="10">Feb</text>
+    <text x="130" y="290" class="code-text" fill="#a0a0a0" font-size="10">Mar</text>
+    <text x="165" y="290" class="code-text" fill="#a0a0a0" font-size="10">Apr</text>
+    <text x="200" y="290" class="code-text" fill="#a0a0a0" font-size="10">May</text>
+
+    <text x="280" y="160" class="code-text" fill="#a0a0a0">Legend:</text>
+    <rect x="280" y="175" width="12" height="12" fill="#569cd6"/>
+    <text x="300" y="183" class="code-text" fill="#a0a0a0" font-size="11">Product A</text>
+
+    <rect x="280" y="205" width="12" height="12" fill="#ce9178"/>
+    <text x="300" y="213" class="code-text" fill="#a0a0a0" font-size="11">Product B</text>
+
+    <rect x="280" y="235" width="12" height="12" fill="#6a9955"/>
+    <text x="300" y="243" class="code-text" fill="#a0a0a0" font-size="11">Product C</text>
+
+    <text x="60" y="330" class="code-text" fill="#a0a0a0" font-size="10">Total: $4.2M | Avg: $840K</text>
+    <text x="60" y="350" class="code-text" fill="#a0a0a0" font-size="10">YoY Growth: 18.5%</text>
+    <text x="60" y="370" class="code-text" fill="#6a9955" font-size="10">✓ All metrics on target</text>
+
+    <animate attributeName="opacity"
+      values="0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;1;1;0.1"
+      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.567;0.642;0.717;0.792;0.867;1"
+      dur="30s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Panel 10: Python Machine Learning -->
+  <g id="panel10" opacity="0.1">
+    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
+
+    <text x="35" y="120" class="line-num">1</text>
+    <text x="35" y="145" class="line-num">2</text>
+    <text x="35" y="170" class="line-num">3</text>
+    <text x="35" y="195" class="line-num">4</text>
+    <text x="35" y="220" class="line-num">5</text>
+    <text x="35" y="245" class="line-num">6</text>
+    <text x="35" y="270" class="line-num">7</text>
+    <text x="35" y="295" class="line-num">8</text>
+
+    <text x="60" y="120" class="code-text"><tspan class="keyword">import</tspan> xgboost <tspan class="keyword">as</tspan> xgb</text>
+    <text x="60" y="145" class="code-text"><tspan class="keyword">from</tspan> sklearn.metrics <tspan class="keyword">import</tspan> roc_auc_score</text>
+    <text x="60" y="170" class="code-text"></text>
+    <text x="60" y="195" class="code-text">model <tspan class="operator">=</tspan> xgb.<tspan class="function">XGBClassifier</tspan>(learning_rate<tspan class="operator">=</tspan><tspan class="number">0.05</tspan>)</text>
+    <text x="60" y="220" class="code-text">model.<tspan class="function">fit</tspan>(X_train, y_train, verbose<tspan class="operator">=</tspan><tspan class="number">10</tspan>)</text>
+    <text x="60" y="245" class="code-text">pred <tspan class="operator">=</tspan> model.<tspan class="function">predict_proba</tspan>(X_test)</text>
+    <text x="60" y="270" class="code-text">roc_auc <tspan class="operator">=</tspan> <tspan class="function">roc_auc_score</tspan>(y_test, pred)</text>
+    <text x="60" y="295" class="code-text"><tspan class="keyword">print</tspan>(<tspan class="string">f'AUC: {roc_auc:.4f}'</tspan>)</text>
+
+    <text x="60" y="330" class="code-text" fill="#a0a0a0">AUC: <tspan class="number">0.9821</tspan></text>
+    <text x="60" y="350" class="code-text" fill="#a0a0a0">Feature Importance:</text>
+    <text x="60" y="370" class="code-text" fill="#6a9955">age: 0.312 | income: 0.278</text>
+    <text x="60" y="390" class="code-text" fill="#6a9955">score: 0.198 | region: 0.212</text>
+
+    <animate attributeName="opacity"
+      values="0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;1;1"
+      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.567;0.642;0.717;0.792;0.867;1"
+      dur="30s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Panel 11: Database Optimization -->
+  <g id="panel11" opacity="0.1">
+    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
+
+    <text x="35" y="120" class="line-num">1</text>
+    <text x="35" y="145" class="line-num">2</text>
+    <text x="35" y="170" class="line-num">3</text>
+    <text x="35" y="195" class="line-num">4</text>
+    <text x="35" y="220" class="line-num">5</text>
+    <text x="35" y="245" class="line-num">6</text>
+    <text x="35" y="270" class="line-num">7</text>
+
+    <text x="60" y="120" class="code-text"><tspan class="keyword">EXPLAIN ANALYZE</tspan></text>
+    <text x="60" y="145" class="code-text"><tspan class="keyword">SELECT</tspan> o.order_id, c.customer_id</text>
+    <text x="60" y="170" class="code-text"><tspan class="keyword">FROM</tspan> orders o</text>
+    <text x="60" y="195" class="code-text"><tspan class="keyword">JOIN</tspan> customers c <tspan class="keyword">ON</tspan> o.cust_id <tspan class="operator">=</tspan> c.id</text>
+    <text x="60" y="220" class="code-text"><tspan class="keyword">WHERE</tspan> o.amount <tspan class="operator">&gt;</tspan> <tspan class="number">1000</tspan></text>
+    <text x="60" y="245" class="code-text"><tspan class="keyword">ORDER BY</tspan> o.created_at <tspan class="keyword">DESC</tspan>;</text>
+
+    <text x="60" y="285" class="code-text" fill="#a0a0a0">Query Plan:</text>
+    <text x="60" y="305" class="code-text" fill="#6a9955">✓ Seq Scan: 234ms</text>
+    <text x="60" y="325" class="code-text" fill="#6a9955">✓ Hash Join: 45ms</text>
+    <text x="60" y="345" class="code-text" fill="#6a9955">✓ Index Scan: 12ms</text>
+    <text x="60" y="365" class="code-text" fill="#4ec9b0">Total: 291ms (optimized)</text>
+    <text x="60" y="385" class="code-text" fill="#6a9955">↓ 42% improvement</text>
+
+    <animate attributeName="opacity"
+      values="0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;1"
+      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.567;0.642;0.717;0.792;0.867;1"
+      dur="30s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Panel 12: Data Presentation -->
+  <g id="panel12" opacity="0.1">
+    <rect x="20" y="90" width="860" height="390" fill="#1e1e1e" stroke="#3e3e42" stroke-width="1"/>
+
+    <text x="60" y="130" class="code-text" fill="#ffffff" font-weight="bold">📉 Executive Summary</text>
+
+    <!-- Report sections -->
+    <text x="60" y="165" class="code-text" fill="#569cd6" font-weight="bold">KEY INSIGHTS</text>
+    <text x="60" y="190" class="code-text" fill="#a0a0a0" font-size="11">• Revenue increased 24.5% YoY</text>
+    <text x="60" y="210" class="code-text" fill="#a0a0a0" font-size="11">• Customer acquisition up 18.2%</text>
+    <text x="60" y="230" class="code-text" fill="#a0a0a0" font-size="11">• Churn rate reduced to 3.2%</text>
+
+    <text x="60" y="265" class="code-text" fill="#ce9178" font-weight="bold">RECOMMENDATIONS</text>
+    <text x="60" y="290" class="code-text" fill="#a0a0a0" font-size="11">1. Invest in market expansion</text>
+    <text x="60" y="310" class="code-text" fill="#a0a0a0" font-size="11">2. Enhance product features</text>
+    <text x="60" y="330" class="code-text" fill="#a0a0a0" font-size="11">3. Optimize pricing strategy</text>
+
+    <text x="60" y="365" class="code-text" fill="#6a9955" font-weight="bold">NEXT STEPS</text>
+    <text x="60" y="390" class="code-text" fill="#a0a0a0" font-size="11">Follow-up analysis in 2 weeks</text>
+
+    <animate attributeName="opacity"
+      values="0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;0.1;1"
+      keyTimes="0;0.08;0.25;0.342;0.417;0.492;0.567;0.642;0.717;0.792;0.867;1"
+      dur="30s" repeatCount="indefinite"/>
+  </g>
+
+</svg>
