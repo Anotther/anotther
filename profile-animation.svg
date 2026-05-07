@@ -1,30 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="860" height="440" viewBox="0 0 860 440">
-
   <!-- Background -->
   <rect width="860" height="440" fill="#0d1117"/>
 
-  <!-- Panel 1: Data Analysis (0-10s) -->
+  <!-- Panel 1: Data Analysis (0-25%) -->
   <g>
-    <animate attributeName="opacity" values="1;1;0;0;0;0;0;0;0;0;1" keyTimes="0;0.2;0.25;0.4;0.45;0.6;0.65;0.8;0.85;0.95;1" dur="45s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0;0;0;0;0;0;0;1" keyTimes="0;0.22;0.25;0.35;0.4;0.5;0.55;0.7;0.75;0.95;1" dur="45s" repeatCount="indefinite"/>
     <rect x="40" y="30" width="780" height="380" rx="8" fill="#161b22"/>
     <rect x="40" y="30" width="780" height="380" rx="8" fill="none" stroke="#21262d"/>
-    <!-- Header -->
     <rect x="40" y="30" width="780" height="36" rx="8" fill="#161b22"/>
     <circle cx="65" cy="48" r="6" fill="#f85149"/>
     <circle cx="85" cy="48" r="6" fill="#d29922"/>
     <circle cx="105" cy="48" r="6" fill="#3fb950"/>
     <text x="430" y="53" text-anchor="middle" font-family="monospace" font-size="13" fill="#8b949e">data_analysis.py</text>
+    <text x="430" y="390" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">Revenue Growth Analysis — Q1-Q4</text>
+    
     <!-- Chart axes -->
     <line x1="100" y1="100" x2="100" y2="340" stroke="#3d444d" stroke-width="1.5"/>
     <line x1="100" y1="340" x2="760" y2="340" stroke="#3d444d" stroke-width="1.5"/>
-    <!-- Y axis labels -->
-    <text x="88" y="105" text-anchor="end" font-family="monospace" font-size="10" fill="#8b949e">100</text>
-    <text x="88" y="180" text-anchor="end" font-family="monospace" font-size="10" fill="#8b949e">75</text>
-    <text x="88" y="255" text-anchor="end" font-family="monospace" font-size="10" fill="#8b949e">50</text>
-    <text x="88" y="340" text-anchor="end" font-family="monospace" font-size="10" fill="#8b949e">0</text>
-    <!-- Title -->
-    <text x="430" y="390" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">Revenue Growth Analysis — Q1-Q4</text>
-    <!-- Data bars with grow animation -->
+    
+    <!-- Data bars -->
     <rect x="140" y="340" width="50" height="0" fill="#58a6ff" rx="2">
       <animate attributeName="height" values="0;180;180;0" keyTimes="0;0.15;0.22;0.25" dur="45s" repeatCount="indefinite"/>
       <animate attributeName="y" values="340;160;160;340" keyTimes="0;0.15;0.22;0.25" dur="45s" repeatCount="indefinite"/>
@@ -49,28 +43,11 @@
       <animate attributeName="height" values="0;260;260;0" keyTimes="0;0.20;0.22;0.25" dur="45s" repeatCount="indefinite"/>
       <animate attributeName="y" values="340;80;80;340" keyTimes="0;0.20;0.22;0.25" dur="45s" repeatCount="indefinite"/>
     </rect>
-    <rect x="590" y="340" width="50" height="0" fill="#d29922" rx="2">
-      <animate attributeName="height" values="0;230;230;0" keyTimes="0;0.21;0.22;0.25" dur="45s" repeatCount="indefinite"/>
-      <animate attributeName="y" values="340;110;110;340" keyTimes="0;0.21;0.22;0.25" dur="45s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="665" y="340" width="50" height="0" fill="#d29922" rx="2">
-      <animate attributeName="height" values="0;280;280;0" keyTimes="0;0.22;0.22;0.25" dur="45s" repeatCount="indefinite"/>
-      <animate attributeName="y" values="340;60;60;340" keyTimes="0;0.22;0.22;0.25" dur="45s" repeatCount="indefinite"/>
-    </rect>
-    <!-- Legend -->
-    <rect x="200" y="400" width="12" height="12" fill="#58a6ff" rx="2"/>
-    <text x="216" y="411" font-family="monospace" font-size="10" fill="#8b949e">Q1-Q2</text>
-    <rect x="300" y="400" width="12" height="12" fill="#3fb950" rx="2"/>
-    <text x="316" y="411" font-family="monospace" font-size="10" fill="#8b949e">Q2-Q3</text>
-    <rect x="400" y="400" width="12" height="12" fill="#bc8cff" rx="2"/>
-    <text x="416" y="411" font-family="monospace" font-size="10" fill="#8b949e">Q3</text>
-    <rect x="460" y="400" width="12" height="12" fill="#d29922" rx="2"/>
-    <text x="476" y="411" font-family="monospace" font-size="10" fill="#8b949e">Q4</text>
   </g>
 
-  <!-- Panel 2: SQL Query (10-22s) -->
+  <!-- Panel 2: SQL Query (25-50%) -->
   <g>
-    <animate attributeName="opacity" values="0;0;0;1;1;0;0;0;0;0;0" keyTimes="0;0.2;0.25;0.3;0.44;0.47;0.6;0.65;0.8;0.95;1" dur="45s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0;0;0;0;0;0" keyTimes="0;0.24;0.27;0.48;0.51;0.65;0.7;0.8;0.95;0.98;1" dur="45s" repeatCount="indefinite"/>
     <rect x="40" y="30" width="780" height="380" rx="8" fill="#161b22"/>
     <rect x="40" y="30" width="780" height="380" rx="8" fill="none" stroke="#21262d"/>
     <rect x="40" y="30" width="780" height="36" rx="8" fill="#161b22"/>
@@ -78,123 +55,50 @@
     <circle cx="85" cy="48" r="6" fill="#d29922"/>
     <circle cx="105" cy="48" r="6" fill="#3fb950"/>
     <text x="430" y="53" text-anchor="middle" font-family="monospace" font-size="13" fill="#8b949e">query.sql</text>
-    <!-- SQL Lines appearing -->
+    
+    <!-- SQL Code -->
     <text x="80" y="100" font-family="monospace" font-size="13" fill="#bc8cff">
-      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.27;0.3;0.44;0.47" dur="45s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.27;0.30;0.48;0.51" dur="45s" repeatCount="indefinite"/>
       SELECT
     </text>
     <text x="150" y="100" font-family="monospace" font-size="13" fill="#e6edf3">
-      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.27;0.3;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      customer_id, product, SUM(revenue) AS total
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.27;0.30;0.48;0.51" dur="45s" repeatCount="indefinite"/>
+      customer_id, SUM(revenue)
     </text>
     <text x="80" y="125" font-family="monospace" font-size="13" fill="#bc8cff">
-      <animate attributeName="opacity" values="0;0;0;1;1;0" keyTimes="0;0.29;0.32;0.35;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      FROM
-    </text>
-    <text x="130" y="125" font-family="monospace" font-size="13" fill="#58a6ff">
-      <animate attributeName="opacity" values="0;0;0;1;1;0" keyTimes="0;0.29;0.32;0.35;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      sales_data
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.32;0.35;0.48;0.51" dur="45s" repeatCount="indefinite"/>
+      FROM sales_data
     </text>
     <text x="80" y="150" font-family="monospace" font-size="13" fill="#bc8cff">
-      <animate attributeName="opacity" values="0;0;0;0;1;1;0" keyTimes="0;0.31;0.34;0.37;0.38;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      WHERE
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.37;0.40;0.48;0.51" dur="45s" repeatCount="indefinite"/>
+      GROUP BY customer_id
     </text>
-    <text x="140" y="150" font-family="monospace" font-size="13" fill="#e6edf3">
-      <animate attributeName="opacity" values="0;0;0;0;1;1;0" keyTimes="0;0.31;0.34;0.37;0.38;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      year = 2024
-    </text>
-    <text x="280" y="150" font-family="monospace" font-size="13" fill="#bc8cff">
-      <animate attributeName="opacity" values="0;0;0;0;1;1;0" keyTimes="0;0.31;0.34;0.37;0.38;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      AND
-    </text>
-    <text x="320" y="150" font-family="monospace" font-size="13" fill="#e6edf3">
-      <animate attributeName="opacity" values="0;0;0;0;1;1;0" keyTimes="0;0.31;0.34;0.37;0.38;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      revenue &gt; 1000
-    </text>
-    <text x="80" y="175" font-family="monospace" font-size="13" fill="#bc8cff">
-      <animate attributeName="opacity" values="0;0;0;0;0;1;1;0" keyTimes="0;0.33;0.36;0.39;0.40;0.41;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      GROUP BY
-    </text>
-    <text x="175" y="175" font-family="monospace" font-size="13" fill="#e6edf3">
-      <animate attributeName="opacity" values="0;0;0;0;0;1;1;0" keyTimes="0;0.33;0.36;0.39;0.40;0.41;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      customer_id, product
-    </text>
-    <text x="80" y="200" font-family="monospace" font-size="13" fill="#bc8cff">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;1;1;0" keyTimes="0;0.35;0.38;0.41;0.42;0.43;0.44;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      ORDER BY
-    </text>
-    <text x="170" y="200" font-family="monospace" font-size="13" fill="#e6edf3">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;1;1;0" keyTimes="0;0.35;0.38;0.41;0.42;0.43;0.44;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      total DESC
-    </text>
-    <!-- Cursor blink -->
-    <rect x="265" y="188" width="8" height="14" fill="#58a6ff" rx="1">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;1;0;1;0;0" keyTimes="0;0.35;0.38;0.41;0.42;0.43;0.44;0.445;0.45;0.46;0.47" dur="45s" repeatCount="indefinite"/>
-    </rect>
-    <!-- Results table header -->
+    
+    <!-- Results Table -->
     <line x1="80" y1="225" x2="760" y2="225" stroke="#21262d" stroke-width="1">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0" keyTimes="0;0.37;0.40;0.42;0.43;0.44;0.445;0.45;0.44;0.47" dur="45s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.42;0.45;0.48;0.51" dur="45s" repeatCount="indefinite"/>
     </line>
     <text x="100" y="245" font-family="monospace" font-size="11" fill="#58a6ff">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0" keyTimes="0;0.37;0.40;0.42;0.43;0.44;0.445;0.45;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      customer_id
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.42;0.45;0.48;0.51" dur="45s" repeatCount="indefinite"/>
+      customer_id | total
     </text>
-    <text x="280" y="245" font-family="monospace" font-size="11" fill="#58a6ff">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0" keyTimes="0;0.37;0.40;0.42;0.43;0.44;0.445;0.45;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      product
-    </text>
-    <text x="480" y="245" font-family="monospace" font-size="11" fill="#58a6ff">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0" keyTimes="0;0.37;0.40;0.42;0.43;0.44;0.445;0.45;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      total
-    </text>
-    <line x1="80" y1="252" x2="760" y2="252" stroke="#21262d" stroke-width="1">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0" keyTimes="0;0.37;0.40;0.42;0.43;0.44;0.445;0.45;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-    </line>
-    <text x="100" y="272" font-family="monospace" font-size="11" fill="#e6edf3">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0" keyTimes="0;0.37;0.40;0.42;0.43;0.44;0.445;0.45;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      C-1042
-    </text>
-    <text x="280" y="272" font-family="monospace" font-size="11" fill="#e6edf3">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0" keyTimes="0;0.37;0.40;0.42;0.43;0.44;0.445;0.45;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      Analytics Pro
-    </text>
-    <text x="480" y="272" font-family="monospace" font-size="11" fill="#3fb950">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0" keyTimes="0;0.37;0.40;0.42;0.43;0.44;0.445;0.45;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      R$ 98,420
+    <text x="100" y="270" font-family="monospace" font-size="11" fill="#e6edf3">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.42;0.45;0.48;0.51" dur="45s" repeatCount="indefinite"/>
+      C-1042 | R$ 98,420
     </text>
     <text x="100" y="295" font-family="monospace" font-size="11" fill="#e6edf3">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0" keyTimes="0;0.37;0.40;0.42;0.43;0.44;0.445;0.45;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      C-0891
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.42;0.45;0.48;0.51" dur="45s" repeatCount="indefinite"/>
+      C-0891 | R$ 74,810
     </text>
-    <text x="280" y="295" font-family="monospace" font-size="11" fill="#e6edf3">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0" keyTimes="0;0.37;0.40;0.42;0.43;0.44;0.445;0.45;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      Dashboard BI
-    </text>
-    <text x="480" y="295" font-family="monospace" font-size="11" fill="#3fb950">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0" keyTimes="0;0.37;0.40;0.42;0.43;0.44;0.445;0.45;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      R$ 74,810
-    </text>
-    <text x="100" y="318" font-family="monospace" font-size="11" fill="#e6edf3">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0" keyTimes="0;0.37;0.40;0.42;0.43;0.44;0.445;0.45;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      C-2233
-    </text>
-    <text x="280" y="318" font-family="monospace" font-size="11" fill="#e6edf3">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0" keyTimes="0;0.37;0.40;0.42;0.43;0.44;0.445;0.45;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      ML Pipeline
-    </text>
-    <text x="480" y="318" font-family="monospace" font-size="11" fill="#3fb950">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0" keyTimes="0;0.37;0.40;0.42;0.43;0.44;0.445;0.45;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      R$ 61,340
-    </text>
-    <text x="80" y="390" font-family="monospace" font-size="11" fill="#8b949e">
-      <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;0" keyTimes="0;0.37;0.40;0.42;0.43;0.44;0.445;0.45;0.44;0.47" dur="45s" repeatCount="indefinite"/>
-      ✓ 3 rows returned in 0.023s
+    <text x="80" y="380" font-family="monospace" font-size="11" fill="#3fb950">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.42;0.45;0.48;0.51" dur="45s" repeatCount="indefinite"/>
+      ✓ 3 rows | 0.023s
     </text>
   </g>
 
-  <!-- Panel 3: Pipeline (22-33s) -->
+  <!-- Panel 3: Pipeline (50-75%) -->
   <g>
-    <animate attributeName="opacity" values="0;0;0;0;0;1;1;0;0;0;0" keyTimes="0;0.44;0.47;0.5;0.51;0.53;0.64;0.67;0.8;0.95;1" dur="45s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0;0;0;0;0;0" keyTimes="0;0.49;0.52;0.73;0.76;0.85;0.9;0.95;0.98;0.99;1" dur="45s" repeatCount="indefinite"/>
     <rect x="40" y="30" width="780" height="380" rx="8" fill="#161b22"/>
     <rect x="40" y="30" width="780" height="380" rx="8" fill="none" stroke="#21262d"/>
     <rect x="40" y="30" width="780" height="36" rx="8" fill="#161b22"/>
@@ -202,119 +106,80 @@
     <circle cx="85" cy="48" r="6" fill="#d29922"/>
     <circle cx="105" cy="48" r="6" fill="#3fb950"/>
     <text x="430" y="53" text-anchor="middle" font-family="monospace" font-size="13" fill="#8b949e">etl_pipeline.py</text>
-    <!-- Pipeline stages -->
     <text x="430" y="90" text-anchor="middle" font-family="monospace" font-size="12" fill="#8b949e">ETL Data Pipeline</text>
-    <!-- Stage nodes -->
-    <!-- Ingest -->
+    
+    <!-- Pipeline Stages -->
     <rect x="80" y="120" width="110" height="60" rx="6" fill="#161b22" stroke="#58a6ff" stroke-width="2">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.53;1" dur="45s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.51;0.55;0.73;0.76" dur="45s" repeatCount="indefinite"/>
     </rect>
-    <text x="135" y="145" text-anchor="middle" font-family="monospace" font-size="11" fill="#58a6ff">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.53;1" dur="45s" repeatCount="indefinite"/>
+    <text x="135" y="148" text-anchor="middle" font-family="monospace" font-size="11" fill="#58a6ff">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.51;0.55;0.73;0.76" dur="45s" repeatCount="indefinite"/>
       INGEST
     </text>
-    <text x="135" y="162" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.53;1" dur="45s" repeatCount="indefinite"/>
-      raw sources
-    </text>
-    <!-- Arrow 1 -->
+    
     <line x1="190" y1="150" x2="230" y2="150" stroke="#3d444d" stroke-width="2">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.54;1" dur="45s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.54;0.58;0.73;0.76" dur="45s" repeatCount="indefinite"/>
     </line>
     <polygon points="228,145 238,150 228,155" fill="#3d444d">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.54;1" dur="45s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.54;0.58;0.73;0.76" dur="45s" repeatCount="indefinite"/>
     </polygon>
-    <!-- Validate -->
+    
     <rect x="240" y="120" width="110" height="60" rx="6" fill="#161b22" stroke="#d29922" stroke-width="2">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.55;1" dur="45s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.56;0.60;0.73;0.76" dur="45s" repeatCount="indefinite"/>
     </rect>
-    <text x="295" y="145" text-anchor="middle" font-family="monospace" font-size="11" fill="#d29922">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.55;1" dur="45s" repeatCount="indefinite"/>
+    <text x="295" y="148" text-anchor="middle" font-family="monospace" font-size="11" fill="#d29922">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.56;0.60;0.73;0.76" dur="45s" repeatCount="indefinite"/>
       VALIDATE
     </text>
-    <text x="295" y="162" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.55;1" dur="45s" repeatCount="indefinite"/>
-      schema check
-    </text>
-    <!-- Arrow 2 -->
+    
     <line x1="350" y1="150" x2="390" y2="150" stroke="#3d444d" stroke-width="2">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.56;1" dur="45s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.59;0.63;0.73;0.76" dur="45s" repeatCount="indefinite"/>
     </line>
     <polygon points="388,145 398,150 388,155" fill="#3d444d">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.56;1" dur="45s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.59;0.63;0.73;0.76" dur="45s" repeatCount="indefinite"/>
     </polygon>
-    <!-- Transform -->
+    
     <rect x="400" y="120" width="110" height="60" rx="6" fill="#161b22" stroke="#bc8cff" stroke-width="2">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.57;1" dur="45s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.61;0.65;0.73;0.76" dur="45s" repeatCount="indefinite"/>
     </rect>
-    <text x="455" y="145" text-anchor="middle" font-family="monospace" font-size="11" fill="#bc8cff">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.57;1" dur="45s" repeatCount="indefinite"/>
+    <text x="455" y="148" text-anchor="middle" font-family="monospace" font-size="11" fill="#bc8cff">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.61;0.65;0.73;0.76" dur="45s" repeatCount="indefinite"/>
       TRANSFORM
     </text>
-    <text x="455" y="162" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.57;1" dur="45s" repeatCount="indefinite"/>
-      pandas/spark
-    </text>
-    <!-- Arrow 3 -->
+    
     <line x1="510" y1="150" x2="550" y2="150" stroke="#3d444d" stroke-width="2">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.58;1" dur="45s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.64;0.68;0.73;0.76" dur="45s" repeatCount="indefinite"/>
     </line>
     <polygon points="548,145 558,150 548,155" fill="#3d444d">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.58;1" dur="45s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.64;0.68;0.73;0.76" dur="45s" repeatCount="indefinite"/>
     </polygon>
-    <!-- Load -->
+    
     <rect x="560" y="120" width="110" height="60" rx="6" fill="#161b22" stroke="#3fb950" stroke-width="2">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.59;1" dur="45s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.66;0.70;0.73;0.76" dur="45s" repeatCount="indefinite"/>
     </rect>
-    <text x="615" y="145" text-anchor="middle" font-family="monospace" font-size="11" fill="#3fb950">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.59;1" dur="45s" repeatCount="indefinite"/>
+    <text x="615" y="148" text-anchor="middle" font-family="monospace" font-size="11" fill="#3fb950">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.66;0.70;0.73;0.76" dur="45s" repeatCount="indefinite"/>
       LOAD
     </text>
-    <text x="615" y="162" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.59;1" dur="45s" repeatCount="indefinite"/>
-      warehouse
-    </text>
-    <!-- Running indicator -->
-    <circle cx="135" cy="220" r="6" fill="#3fb950">
-      <animate attributeName="opacity" values="1;0;1;0;1" dur="1.2s" repeatCount="indefinite"/>
-    </circle>
-    <text x="150" y="225" font-family="monospace" font-size="11" fill="#3fb950">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.53;1" dur="45s" repeatCount="indefinite"/>
-      Ingest complete — 1.2M records
-    </text>
-    <circle cx="135" cy="248" r="6" fill="#3fb950">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.55;1" dur="45s" repeatCount="indefinite"/>
-    </circle>
-    <text x="150" y="253" font-family="monospace" font-size="11" fill="#3fb950">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.55;1" dur="45s" repeatCount="indefinite"/>
-      Validation passed — 0 errors
-    </text>
-    <circle cx="135" cy="276" r="6" fill="#d29922">
-      <animate attributeName="opacity" values="1;0;1;0;1" dur="0.8s" repeatCount="indefinite">
-        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.57;0.58;1" dur="45s" repeatCount="indefinite"/>
-      </animate>
-    </circle>
-    <text x="150" y="281" font-family="monospace" font-size="11" fill="#d29922">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.57;1" dur="45s" repeatCount="indefinite"/>
-      Transforming... 68%
-    </text>
+    
     <!-- Progress bar -->
-    <rect x="150" y="295" width="300" height="8" rx="4" fill="#21262d">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.57;1" dur="45s" repeatCount="indefinite"/>
+    <rect x="150" y="260" width="300" height="8" rx="4" fill="#21262d">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.57;0.60;0.73;0.76" dur="45s" repeatCount="indefinite"/>
     </rect>
-    <rect x="150" y="295" width="0" height="8" rx="4" fill="#d29922">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.57;1" dur="45s" repeatCount="indefinite"/>
-      <animate attributeName="width" values="0;204;204" keyTimes="0;0.63;1" dur="45s" repeatCount="indefinite"/>
+    <rect x="150" y="260" width="0" height="8" rx="4" fill="#3fb950">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.57;0.60;0.73;0.76" dur="45s" repeatCount="indefinite"/>
+      <animate attributeName="width" values="0;0;204;204;0" keyTimes="0;0.57;0.60;0.72;0.76" dur="45s" repeatCount="indefinite"/>
     </rect>
+    
     <text x="80" y="380" font-family="monospace" font-size="11" fill="#8b949e">
-      <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.57;1" dur="45s" repeatCount="indefinite"/>
-      Pipeline run #47 | Started 14:32:01 | Duration 00:04:28
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.51;0.55;0.73;0.76" dur="45s" repeatCount="indefinite"/>
+      Pipeline #47 | 14:32 | 1.2M records
     </text>
   </g>
 
-  <!-- Panel 4: Dashboard / KPIs (33-45s) -->
+  <!-- Panel 4: Dashboard (75-100%) -->
   <g>
-    <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1;1;0" keyTimes="0;0.44;0.47;0.6;0.63;0.65;0.67;0.7;0.95;0.98;1" dur="45s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;1;0" keyTimes="0;0.74;0.77;0.95;0.98;1" dur="45s" repeatCount="indefinite"/>
     <rect x="40" y="30" width="780" height="380" rx="8" fill="#161b22"/>
     <rect x="40" y="30" width="780" height="380" rx="8" fill="none" stroke="#21262d"/>
     <rect x="40" y="30" width="780" height="36" rx="8" fill="#161b22"/>
@@ -324,60 +189,40 @@
     <text x="430" y="53" text-anchor="middle" font-family="monospace" font-size="13" fill="#8b949e">dashboard.py — KPI Overview</text>
 
     <!-- KPI Cards -->
-    <!-- Card 1 -->
     <rect x="60" y="80" width="170" height="100" rx="6" fill="#0d1117" stroke="#21262d"/>
-    <text x="145" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">RECEITA TOTAL</text>
-    <text x="145" y="140" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#3fb950">R$2.4M</text>
-    <text x="145" y="162" text-anchor="middle" font-family="monospace" font-size="10" fill="#3fb950">↑ 18.3% vs ano anterior</text>
+    <text x="145" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">RECEITA</text>
+    <text x="145" y="140" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#3fb950">R$2.4M</text>
+    <text x="145" y="162" text-anchor="middle" font-family="monospace" font-size="10" fill="#3fb950">↑ 18.3%</text>
 
-    <!-- Card 2 -->
     <rect x="250" y="80" width="170" height="100" rx="6" fill="#0d1117" stroke="#21262d"/>
-    <text x="335" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">CLIENTES ATIVOS</text>
-    <text x="335" y="140" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#58a6ff">14,892</text>
-    <text x="335" y="162" text-anchor="middle" font-family="monospace" font-size="10" fill="#58a6ff">↑ 7.1% vs mês anterior</text>
+    <text x="335" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">CLIENTES</text>
+    <text x="335" y="140" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#58a6ff">14,892</text>
+    <text x="335" y="162" text-anchor="middle" font-family="monospace" font-size="10" fill="#58a6ff">↑ 7.1%</text>
 
-    <!-- Card 3 -->
     <rect x="440" y="80" width="170" height="100" rx="6" fill="#0d1117" stroke="#21262d"/>
-    <text x="525" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">TICKET MÉDIO</text>
-    <text x="525" y="140" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#bc8cff">R$161</text>
-    <text x="525" y="162" text-anchor="middle" font-family="monospace" font-size="10" fill="#bc8cff">↑ 4.2% crescimento</text>
+    <text x="525" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">TICKET</text>
+    <text x="525" y="140" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#bc8cff">R$161</text>
+    <text x="525" y="162" text-anchor="middle" font-family="monospace" font-size="10" fill="#bc8cff">↑ 4.2%</text>
 
-    <!-- Card 4 -->
     <rect x="630" y="80" width="170" height="100" rx="6" fill="#0d1117" stroke="#21262d"/>
-    <text x="715" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">NPS SCORE</text>
-    <text x="715" y="140" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold" fill="#d29922">87</text>
+    <text x="715" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">NPS</text>
+    <text x="715" y="140" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#d29922">87</text>
     <text x="715" y="162" text-anchor="middle" font-family="monospace" font-size="10" fill="#d29922">↑ Excelente</text>
 
-    <!-- Line chart -->
-    <text x="80" y="215" font-family="monospace" font-size="11" fill="#8b949e">Tendência Mensal de Receita</text>
-    <polyline points="80,370 160,340 240,310 320,290 400,260 480,230 560,210 640,180 720,150 800,120"
-      fill="none" stroke="#3fb950" stroke-width="2" stroke-dasharray="4,2" opacity="0.4"/>
-    <polyline points="80,370 160,355 240,330 320,310 400,285 480,255 560,235 640,200 720,175 800,140"
-      fill="none" stroke="#3fb950" stroke-width="2.5"/>
-    <!-- Area fill -->
-    <polygon points="80,370 160,355 240,330 320,310 400,285 480,255 560,235 640,200 720,175 800,140 800,410 80,410"
-      fill="#3fb950" opacity="0.08"/>
+    <!-- Chart -->
+    <text x="80" y="215" font-family="monospace" font-size="11" fill="#8b949e">Tendência Mensal</text>
+    <polyline points="80,370 160,355 240,330 320,310 400,285 480,255 560,235 640,200 720,175 800,140" fill="none" stroke="#3fb950" stroke-width="2.5"/>
+    <polygon points="80,370 160,355 240,330 320,310 400,285 480,255 560,235 640,200 720,175 800,140 800,410 80,410" fill="#3fb950" opacity="0.08"/>
+    
     <!-- Data points -->
-    <circle cx="160" cy="355" r="4" fill="#3fb950"/>
-    <circle cx="240" cy="330" r="4" fill="#3fb950"/>
-    <circle cx="320" cy="310" r="4" fill="#3fb950"/>
-    <circle cx="400" cy="285" r="4" fill="#3fb950"/>
-    <circle cx="480" cy="255" r="4" fill="#3fb950"/>
-    <circle cx="560" cy="235" r="4" fill="#3fb950"/>
-    <circle cx="640" cy="200" r="4" fill="#3fb950"/>
-    <circle cx="720" cy="175" r="4" fill="#3fb950"/>
-    <circle cx="800" cy="140" r="4" fill="#3fb950">
-      <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite"/>
-    </circle>
-    <!-- Month labels -->
-    <text x="160" y="405" text-anchor="middle" font-family="monospace" font-size="9" fill="#3d444d">Mai</text>
-    <text x="240" y="405" text-anchor="middle" font-family="monospace" font-size="9" fill="#3d444d">Jun</text>
-    <text x="320" y="405" text-anchor="middle" font-family="monospace" font-size="9" fill="#3d444d">Jul</text>
-    <text x="400" y="405" text-anchor="middle" font-family="monospace" font-size="9" fill="#3d444d">Ago</text>
-    <text x="480" y="405" text-anchor="middle" font-family="monospace" font-size="9" fill="#3d444d">Set</text>
-    <text x="560" y="405" text-anchor="middle" font-family="monospace" font-size="9" fill="#3d444d">Out</text>
-    <text x="640" y="405" text-anchor="middle" font-family="monospace" font-size="9" fill="#3d444d">Nov</text>
-    <text x="720" y="405" text-anchor="middle" font-family="monospace" font-size="9" fill="#3d444d">Dez</text>
+    <circle cx="160" cy="355" r="3" fill="#3fb950"/>
+    <circle cx="240" cy="330" r="3" fill="#3fb950"/>
+    <circle cx="320" cy="310" r="3" fill="#3fb950"/>
+    <circle cx="400" cy="285" r="3" fill="#3fb950"/>
+    <circle cx="480" cy="255" r="3" fill="#3fb950"/>
+    <circle cx="560" cy="235" r="3" fill="#3fb950"/>
+    <circle cx="640" cy="200" r="3" fill="#3fb950"/>
+    <circle cx="720" cy="175" r="3" fill="#3fb950"/>
   </g>
 
 </svg>
